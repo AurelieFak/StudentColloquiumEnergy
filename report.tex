@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+\usepackage{latexsym}
+\usepackage[a4paper]{geometry}
+\usepackage{color}
+\usepackage{listings}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+
+
+\definecolor{Blue}{rgb}{0,0,0.5}
+\definecolor{Green}{rgb}{0,0.75,0.0}
+\definecolor{LightGray}{rgb}{0.6,0.6,0.6}
+\definecolor{DarkGray}{rgb}{0.3,0.3,0.3}
+\lstset{language=Matlab,
+   keywords={function,uint8,uint16,uint32,double,break,case,catch,continue,else,elseif,end,for,global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily\small,
+   breaklines=true,
+   keywordstyle=\bfseries\color{Blue},
+   commentstyle=\itshape\color{LightGray},
+   stringstyle=\color{Green},
+   numbers=left,
+   numberstyle=\tiny\color{DarkGray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=2,
+   showspaces=false,
+   showstringspaces=false,
+   captionpos=b}
+
+%Boldface text for type writer font
+\usepackage{bold-extra} %\DeclareFontShape{OT1}{cmtt}{bx}{n}{<5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmttb10}{}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+\usepackage{parskip}
+
+%Break words properly at the end of a line (which isn't sloppy...)
+\sloppy
+
+%Use command \exercise for each exercise
+\newcounter{exerciseCount}
+\setcounter{exerciseCount}{0}
+\newcommand{\exercise}[1]{\addtocounter{exerciseCount}{1} \noindent \medskip {\large \textsf{\textbf{Exercise \arabic{exerciseCount} \--- #1}}} \par}
+\renewcommand{\theenumi}{\textsf{\textbf{\alph{enumi}}}}
+
+%Use command \code for code snippets
+\newcommand{\code}[1]{\textnormal{\texttt{#1}}}
+
+
+\title{\textsf{Proposal 13th SC@RUG \\ The impact of user interface design of eco-feedback systems on consumer behavior}}
+\author{Aur\'{e}lie Fakambi ~~~~~~~~~~~~ Wouter Menninga}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Saving energy in buildings has become and remains a major issue. The last decade, systems have been developed to provide consumers with information about their energy consumption. However, a new challenge came up:
+a lot of surveys and research have shown that the type of information displayed and the techniques used to present it have an impact on the user behavior. This raises the question about how to display the information to the consumer in a comprehensive, attractive and non-intrusive way. \\
+
+In this paper we compare and discuss the various methods of visualizing energy usage for consumers. Some of the components of user interfaces are more likely to aid in providing the consumer with an understanding of his energy usage and changing his behavior.
+We will extract the most effective methods from relevant research and surveys. \\
+
+The comparison of the different methods is based on the reduction of energy usage of consumers using such eco-feedback systems. Another important factor in the comparison is if consumers keep using the eco-feedback systems for longer periods of time.
+
+We expect to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
+
+\end{abstract}
+~\\[0.5cm]
+\begin{description}
+\item[Keywords:] Eco-Feedback, interface design, energy consumption, consumption feedback systems, energy feedback
+
+\item[Field of research:] Computing Science
+
+\item[Topic:] User Interfaces for Eco-Feedback Systems
+
+\item[The specific focus/research question:] What is the effect of user interface design of eco-feedback systems on consumer behavior?
+
+\item[Expected findings/results:] We expect to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
+\end{description}
+
+\end{document}
