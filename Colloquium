@@ -1,0 +1,70 @@
+PAPER STUDENT COLLOQUIUM
+
+Here by energy we focus on electricity power
+
+FINAL GOAL : present the best features in one sentence
+
+ABSTRACT
+
+INTRODUCTION
+Goal
+Problematics
+
+Nowadays energy consumption is a global challenge/major issue
+
+For years many UI have been implemented in order to provide an eco feedback to the users so that they can be aware of their energy usage...
+Many studies have shown that the design of those interfaces and their components affect ( in a different way ) the understanding of the data and in consequence/at the end the user behavior.
+
+
+Our goal is to investigate about the different ways to display to the users their electricity usage
+Those different components are most of the time : historical comparison, presentation of costs, incentive, reward, commitment
+From those components we want to extract the most effective ones : by effective we mean the ones which are more likely to help users reduce their electricity usage/save energy
+Thanks to previous surveys we are going to compare percentage in the reduction of electricty use according to the use of the different components.
+We are also going to compare different already existing UI (not sure)
+As a criteria for the most effective ones studies have demonstrated that the information provided must be intuitive, clear and simple and the UI attractive and not too intrusive( eg not too many notifications) 
+so that the user keeps using it and is integrated in their everyday life
+
+In this paper we'll ( try to ) answer the following questions : What are the main components ? Which can they be presented in an effective way ?
+
+
+BODY OF THE TEXT
+
+I- Presentation/listing of the main or key design components :
+Feedback
+Incentive
+Comparison : historical and normative , weather affect
+goal setting , user psychology blablabla
+Commitment
+Disaggregation
+rewards
+penalization
+
+The different types of app : classical and games
+Smart meter, Personal computer, mobile devices, house display
+
+II-The surveys : who best than the user itself is capable of saying what he needs and what he wants to see ?
+Explaining the process 
+use of protoypes of UI so that the interviewee/respondent can choose and rate
+Interviews to answer the question : What kind of electricity consumption feedback consumers understand and prefer ? => difficiulties with scientiic units blablabla 
+Kind of questions asked
+
+III- HOW 
+Kind of presentation that the users prefere graphical vs Text => guidelines of Smith and Mosier
+GRAPHICAL blablabla
+chart pie , bar chart, tabular presentation
+Title idea : graphical, numerical and textual presentation
+
+
+
+RESULTS/DISCUSSION/CONCLUSION
+Percentage for example ; when providing an historical comparison the decrease is about 10-15% BLABLABLA
+
+As a conclusion,most valued components according to the surveys and research 
+
+
+
+Key words and sentences 
+FEEEEDBACK
+Percentage
+Charts , graphics
+The saving will be more consequent depending on the type and quality of the feedback
