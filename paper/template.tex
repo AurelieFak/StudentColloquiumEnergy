@@ -51,21 +51,18 @@
 
 %% Paper title.
 
-\title{Global Illumination for Fun and Profit}
+\title{The impact of user interface design of eco-feedback systems on consumer behavior}
 
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
-\author{Roy G. Biv, Ed Grimley, \textit{Member, IEEE}, and Martha Stewart}
+\author{Aur\'{e}lie Fakambie and Wouter Menninga}
 \authorfooter{
 %% insert punctuation at end of each item
 \item
   Roy G. Biv is with Starbucks Research, E-mail: roy.g.biv@aol.com.
 \item
   Ed Grimley is with Grimley Widgets, Inc., E-mail: ed.grimley@aol.com.
-\item
-  Martha Stewart is with Martha Stewart Enterprises at Microsoft
-  Research, E-mail: martha.stewart@marthastewart.com.
 }
 
 %% A teaser figure is NOT to be included.
@@ -138,7 +135,93 @@ This raises the question of what the most effective methods to visualize energy 
 % many studies have shown that feedback works effectively...[ref]
 %It has been shown in many studies that feedback systems have effect in reducing energy consumption
 % design of user interface is a key factor to have impact on energy behavior
+\section{User Interface components}
+Blablabla
 
+\section{The Surveys}
+Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before.
+This section will discuss the results of some of these studies. \\
+
+In a study from R.K. Jain et al\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key design components:
+\begin{itemize}
+\item \textit{Historical comparison} - ability to view historical electricity consumption in three modes (24h, to date and last week)
+\item \textit{Normative comparison} - ability to view the average electricity consumption of friends
+\item \textit{Rewards and penalization} - ability to get points or lose points based on consumption behavior
+\item \textit{Incentives} - ability to redeem points for prizes
+\item \textit{Disaggregation} - ability to find out the consumption of specific devices
+\end{itemize}
+
+The prototype was designed to allow users to go to any of the key design components with a single click from the main view.
+
+The system gathered and stored data on logins and use of the system in a database for later analysis.\\
+
+Participants were divided into three groups: one group had access to room-level electricity usage data and consumption information for participants in their peer network added to the historical comparison graphs. 
+The second group only had access to the room-level electricity usage data.
+The third group was a control group without access to the eco-feedback system.
+
+The researchers formulated and tested three hypothesis, namely:
+\begin{enumerate}
+\item Users who reduced their energy usage relative to the control group, will have visited the eco-feedback system more often than users who increased or maintained their energy usage.
+\item Users that use: historical comparison, normative comparison, incentives/rewards or disaggregation will login more than users that do not use this feature.
+\item The sign of the number of reward points a users view on their first login correlates with the number of times a user will log into the eco-feedback system.
+\end{enumerate}
+
+In Table~\ref{hypo1}, the results of performing an analysis of the login data can be seen. The data in this table confirms the hypothesis that users who decreases consumption logged in more often (almost twice as often) than users with an increased consumption.
+
+\begin{table}
+%% Table captions on top in journal version
+  \caption{The results for the first hypothesis}
+  \label{hypo1}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{cccc}
+    \multicolumn{1}{p{1cm}}{\centering } &
+       \multicolumn{1}{p{2.5cm}}{\centering Users who reduced consumption} &
+       \multicolumn{1}{p{2.5cm}}{\centering Users who increased consumption} &
+       \multicolumn{1}{p{1cm}}{\centering p-value} \\
+    \hline
+      Mean user logins &  5.13 & 2.60 & .028\\
+
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}
+  \caption{}
+  \label{vis_accept}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{lccc}
+    \multicolumn{1}{p{2.5cm}}{\centering Mean user logins by component used} &
+       \multicolumn{1}{p{2cm}}{\centering Users who used feature} &
+       \multicolumn{1}{p{2cm}}{\centering Users who did not use feature} &
+       \multicolumn{1}{p{1cm}}{\centering p-value} \\
+    \hline
+      Historical comparison &  4.61 & 1.67 & .0009\\
+      Normative comparison &  5.00 & 2.40 & .12\\
+      Incentives/rewards &  4.49 & 1.25 & .0001\\
+      Disaggregation &  4.60 & 4.00 & .54\\
+
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}
+  \caption{}
+  \label{vis_accept}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{lccc}
+    \multicolumn{1}{p{2cm}}{\centering } &
+       \multicolumn{1}{p{2cm}}{\centering Users that viewed positive points} &
+       \multicolumn{1}{p{2cm}}{\centering  Users that viewed negative points} &
+       \multicolumn{1}{p{1cm}}{\centering p-value} \\
+    \hline
+      Mean user logins &  4.79 & 2.10 & .0059\\
+
+    \end{tabular}
+  \end{center}
+\end{table}
 
 \section{Conclusion}
 
