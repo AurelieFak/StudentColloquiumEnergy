@@ -56,7 +56,7 @@
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
-\author{Aur\'{e}lie Fakambie and Wouter Menninga}
+\author{Aur\'{e}lie Fakambi and Wouter Menninga}
 \authorfooter{
 %% insert punctuation at end of each item
 \item
@@ -125,7 +125,7 @@ One method of reducing energy consumption is by increasing the awareness of cons
 However, research has shown that the type of information displayed and the technique used to present it have an impact on the user behavior. This means that the design of the user interface is a key factor in changing the users energy consumption behavior.
 
 Our goal is to investigate the different ways to display to the users their electricity usage.
-The main UI components of eco-feedback systems are : historical comparison, presentation of costs, incentive, reward and commitment. From those components we want to extract the most effective ones : by effective we mean the ones which are more likely to help users save energy. Based on previous surveys we are going to compare percentage in the reduction of electricity usage according to the use of the different components. We are also going to compare different already existing UI. As criteria for the most effective ones studies have demonstrated that the information provided must be intuitive, clear and simple and the UI attractive and not too intrusive(e.g. not too many notifications) so that the users keep using it and is integrated in their everyday life.
+The main UI components of eco-feedback systems are: historical comparison, presentation of costs, incentive, reward and commitment. From those components we want to extract the most effective ones: by effective we mean the ones which are more likely to help users save energy. Based on previous surveys we are going to compare percentage in the reduction of electricity usage according to the use of the different components. We are also going to compare different already existing UI. As criteria for the most effective ones studies have demonstrated that the information provided must be intuitive, clear and simple and the UI attractive and not too intrusive (e.g. not too many notifications) so that the users keep using it and is integrated in their everyday life.
 
 This raises the question of what the most effective methods to visualize energy consumption data for future eco-feedback systems are. 
 
@@ -141,6 +141,81 @@ Blablabla
 \section{The Surveys}
 Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before.
 This section will discuss the results of some of these studies. \\
+
+In a study from S. Karjalainen\cite{karjalainen2011consumer} from 2010, interviewing and paper prototyping were used to find the best ways to present information for maximum energy reductions. In this study, interviews with consumers were held to find out about their attitude towards energy monitoring and what kind of feedback they understand and prefer.
+
+The qualitative interviews showed that 8 out of 14 interviewees actively try to save electricity at home, while all 14 responded they want to monitor electricity consumption. The interviewees also indicated that they prefer to receive feedback via a bill, web page or dedicated wall display rather than a mobile phone. \\
+
+Additionally, 8 paper user interface prototypes were developed. Table~\ref{prototypes} shows an overview of the UI components present in these prototypes. 
+
+\begin{table}
+%% Table captions on top in journal version
+  \caption{Overview of information presented in the different prototypes by Karjalainen\cite{karjalainen2011consumer}}
+  \label{prototypes}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{|l|cccccccc|}
+    \hline
+      & \multicolumn{8}{|c|}{Prototype} \\
+    
+      UI component & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+    \hline
+      Historical comparison & $\times$ &  &  &  &  &  &  & \\ \hline
+      Normative comparison &  & $\times$ & $\times$ &  &  &  &  & \\ \hline
+      Goal setting &  & $\times$ &  &  &  &  &  & \\ \hline
+      Consumption (kWh) & $\times$ & $\times$ &  &  &  & $\times$ & $\times$ & $\times$ \\ \hline
+      Power (W) &  &  &  & $\times$ & $\times$ &  &  & \\ \hline
+      Costs (Euro) &  & $\times$ &  &  &  & $\times$ &  & \\ \hline
+      Environmental factor (kg CO$_2$) &  &  & $\times$ &  &  &  &  & \\ \hline
+      Household total & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & \\ \hline
+      Disaggregation day/night &  &  &  &  &  &  & $\times$ & \\ \hline
+      Disaggregation by device &  &  &  &  & $\times$ & $\times$ & $\times$ & $\times$ \\ \hline
+      Chart & $\times$ &  &  & $\times$ & $\times$ &  & $\times$ & $\times$ \\ \hline
+      Other pictorial &  & $\times$ & $\times$ &  &  &  &  & \\ \hline
+      Table &  &  &  &  &  & $\times$ &  & \\ \hline
+      Other numeric &  & $\times$ & $\times$ &  & $\times$ &  &  & $\times$ \\ \hline
+      Textual &  &  & $\times$ &  &  &  &  & \\ \hline
+      Chooseable time period &  & $\times$ & $\times$ & $\times$ &  & $\times$ & $\times$ &  $\times$ \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+The prototypes were shown to consumers, to find out how well these interfaces are understood by them. The prototypes were displayed to the consumers one by one and after showing all the prototypes, they were asked if they understood the prototypes and asked to choose the prototype they would prefer to use themselves.\\
+
+Most prototypes were understood by the participants. Problems with understanding were mostly due to the fact that many people are not familiar with the scientific units used and do not, for example, understand the difference between W and kWh. Secondly, people in general do not understand how CO$_2$ emissions relate to energy consumption.
+
+% results
+\begin{table}
+%% Table captions on top in journal version
+  \caption{Nr of participants that understood and preferred for each of the prototypes. Total participants: 14.}
+  \label{prototypesresults}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{|lcc|}
+    \hline
+       & \multicolumn{1}{p{2.5cm}}{\centering Nr of participants that understood prototype} & 
+       \multicolumn{1}{p{3cm}|}{\centering Nr of participants who preferred prototype}  \\ \hline
+       Prototype 1 & 14 & 1 \\ 
+       Prototype 2 & 14 & 1 \\ 
+       Prototype 3 & 8 & 0 \\ 
+       Prototype 4 & 12 & 0 \\ 
+       Prototype 5 & 7 & 1 \\ 
+       Prototype 6 & 14 & 7 \\ 
+       Prototype 7 & 13 & 1 \\ 
+       Prototype 8 & 14 & 3 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+
+% methods
+%  interviewing
+%    results
+%  paper prototyping
+%    results
+
+~\\
 
 In a study from R.K. Jain et al\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key design components:
 \begin{itemize}
@@ -163,10 +238,10 @@ The researchers formulated and tested three hypothesis, namely:
 \begin{enumerate}
 \item Users who reduced their energy usage relative to the control group, will have visited the eco-feedback system more often than users who increased or maintained their energy usage.
 \item Users that use: historical comparison, normative comparison, incentives/rewards or disaggregation will login more than users that do not use this feature.
-\item The sign of the number of reward points a users view on their first login correlates with the number of times a user will log into the eco-feedback system.
+\item The sign of the number of reward points a users views on their first login correlates with the number of times a user will log into the eco-feedback system.
 \end{enumerate}
 
-In Table~\ref{hypo1}, the results of performing an analysis of the login data can be seen. The data in this table confirms the hypothesis that users who decreases consumption logged in more often (almost twice as often) than users with an increased consumption.
+In Table~\ref{hypo1}, the results of performing an analysis of the login data can be seen. The data in this table confirms the hypothesis that users who decreased consumption logged in more often (almost twice as often) than users with an increased consumption. \\
 
 \begin{table}
 %% Table captions on top in journal version
@@ -186,9 +261,13 @@ In Table~\ref{hypo1}, the results of performing an analysis of the login data ca
   \end{center}
 \end{table}
 
+Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the \textit{historical comparison} feature, on average logged in 3 more times that users that did not use that feature. Additionally, users that used the \textit{incentives} feature logged in more that 3 additional times compared to users that did not use that feature.
+
+For the \textit{normative comparison} and \textit{disaggregation} features, the p-value is not significantly low to reject the null hypotheses. \\
+
 \begin{table}
-  \caption{}
-  \label{vis_accept}
+  \caption{Correlation between user logins and the use of specific design components}
+  \label{hypo2}
   \scriptsize
   \begin{center}
     \begin{tabular}{lccc}
@@ -200,21 +279,23 @@ In Table~\ref{hypo1}, the results of performing an analysis of the login data ca
       Historical comparison &  4.61 & 1.67 & .0009\\
       Normative comparison &  5.00 & 2.40 & .12\\
       Incentives/rewards &  4.49 & 1.25 & .0001\\
-      Disaggregation &  4.60 & 4.00 & .54\\
+      Disaggregation &  4.60 & 4.00 & .64\\
 
     \end{tabular}
   \end{center}
 \end{table}
 
+In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users who viewed a positive number of points on their first login, logged in 2.5 more times than users that got to see a negative number of points on their first login. 
+
 \begin{table}
-  \caption{}
-  \label{vis_accept}
+  \caption{Correlation between the sign of the number of points on first visit and number of logins}
+  \label{hypo3}
   \scriptsize
   \begin{center}
     \begin{tabular}{lccc}
     \multicolumn{1}{p{2cm}}{\centering } &
        \multicolumn{1}{p{2cm}}{\centering Users that viewed positive points} &
-       \multicolumn{1}{p{2cm}}{\centering  Users that viewed negative points} &
+       \multicolumn{1}{p{2cm}}{\centering Users that viewed negative points} &
        \multicolumn{1}{p{1cm}}{\centering p-value} \\
     \hline
       Mean user logins &  4.79 & 2.10 & .0059\\
@@ -222,6 +303,8 @@ In Table~\ref{hypo1}, the results of performing an analysis of the login data ca
     \end{tabular}
   \end{center}
 \end{table}
+
+
 
 \section{Conclusion}
 
