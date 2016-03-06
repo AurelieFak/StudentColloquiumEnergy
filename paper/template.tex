@@ -31,6 +31,8 @@
 \usepackage{graphicx}
 \usepackage{times}
 
+\usepackage{pbox}
+
 %% We encourage the use of mathptmx for consistent usage of times font
 %% throughout the proceedings. However, if you encounter conflicts
 %% with other math-related packages, you may want to disable it.
@@ -182,7 +184,8 @@ Additionally, 8 paper user interface prototypes were developed. Table~\ref{proto
 
 The prototypes were shown to consumers, to find out how well these interfaces are understood by them. The prototypes were displayed to the consumers one by one and after showing all the prototypes, they were asked if they understood the prototypes and asked to choose the prototype they would prefer to use themselves.\\
 
-Most prototypes were understood by the participants. Problems with understanding were mostly due to the fact that many people are not familiar with the scientific units used and do not, for example, understand the difference between W and kWh. Secondly, people in general do not understand how CO$_2$ emissions relate to energy consumption.
+The results of the survey can be seen in Table~\ref{prototypesresults}. Most prototypes were understood by the participants. Problems with understanding were mostly due to the fact that many people are not familiar with the scientific units used and do not, for example, understand the difference between W and kWh. Secondly, people in general do not understand how CO$_2$ emissions relate to energy consumption.
+In contrast, information presented in charts and tables is understood easily by the participants.
 
 % results
 \begin{table}
@@ -207,17 +210,32 @@ Most prototypes were understood by the participants. Problems with understanding
   \end{center}
 \end{table}
 
+Participants were also asked some general questions about how important they find certain aspects of eco-feedback systems. The questions were answered using a scale of 1 to 5, where 5 was very important and 1 not important at all. The question with the average of the response of the 14 participants can be seen in Table~\ref{prototypesquestions}.
 
+% results
+\begin{table}
+%% Table captions on top in journal version
+  \caption{General questions about eco-feedback systems}
+  \label{prototypesquestions}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{|ll|}
+    \hline
+       Question (\textit{How important is it to...}) & Avg. \\ \hline
+       \pbox{20cm}{\textit{be able to compare your household's consumption}\\\textit{to other households?}} & 3.6 \\ ~\\[-0.25cm]
+       \textit{be able to compare your consumption to your prior consumption?} & 4.4 \\ 
+       \textit{have a target level for consumption?} & 3.5 \\ 
+       \textit{know the consumption of individual devices?} & 4.1 \\ 
+       \textit{receive information on actions which would save energy?} & 3.9 \\
+       \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
-% methods
-%  interviewing
-%    results
-%  paper prototyping
-%    results
-
+The results of this study by Karjalainen found the following UI components most valued by consumers: presentation of costs, device-specific breakdown of energy usage and historical comparison.
 ~\\
 
-In a study from R.K. Jain et al\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key design components:
+Another study from R.K. Jain et al\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key design components:
 \begin{itemize}
 \item \textit{Historical comparison} - ability to view historical electricity consumption in three modes (24h, to date and last week)
 \item \textit{Normative comparison} - ability to view the average electricity consumption of friends
@@ -285,7 +303,7 @@ For the \textit{normative comparison} and \textit{disaggregation} features, the 
   \end{center}
 \end{table}
 
-In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users who viewed a positive number of points on their first login, logged in 2.5 more times than users that got to see a negative number of points on their first login. 
+In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users who viewed a positive number of points on their first login, logged in 2.5 more times than users that got to see a negative number of points on their first login. \\
 
 \begin{table}
   \caption{Correlation between the sign of the number of points on first visit and number of logins}
@@ -304,6 +322,71 @@ In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users wh
   \end{center}
 \end{table}
 
+
+In another paper, Erickson et al.\cite{erickson2013dubuque} build a city-scale eco-feedback system aimed at reducing electricity consumption. The system provided households with fine-grained feedback about the electricity usage and has incentives, comparisons and goal setting for encouragement to save energy. \\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.26]{./electricity_portal.png}
+	\caption{The electricity portal divided in the 6 bands.}
+	\label{fig:electricityportal}
+\end{figure}
+
+The user interface of the portal can be seen in Figure~\ref{fig:electricityportal}. It is divided into 6 bands:
+\begin{enumerate}
+\item Header, with date and menu access.
+\item User name, usage to date, estimate of current month's usage and three incentives: trend (for self comparison), rank (among other households) and `green points', which can be collected with actions such as completing one's profile.
+\item Daily electricity usage displayed in kWh or in dollar.
+\item A graph of todays consumption and a textual comparison of the users electricity consumption.
+\item A graph allowing users to view their energy usage compared to the previous year, broken down by load or compared to 30 similar households. It also has a component where users can view and set their goals.
+\item Links to general information.
+\end{enumerate}
+
+The portal was made available 765 households in a few contiguous neighborhoods in the city of Dubuque in the United States and the project ran for about 20 weeks. Use of the portal was logged and surveys and interviews were held to find out about the experiences of the users of the portal.
+
+%results
+%  numbaahs
+Out of 765 households, 266 (35\%) logged into the portal at least one time. In the survey, respondents were asked to estimate how often they used the portal. The responses were as follows:
+\begin{enumerate}
+\item five or more times per week -- 12\%
+\item about once a week -- 18\%
+\item occasional use -- 31\%
+\item rare use -- 25\%
+\item not applicable / do not recall -- 14\%
+\end{enumerate}
+
+In the survey, participants were also asked about the UI components whether they usually looked at them, if they needed more explanation, if it helped them to better understand their electricity consumption and if it encouraged them to undertake action. The responses in percentages to these questions can be seen in Table~\ref{uicomponents}. %TODO: consclusion based on table 7
+
+The first four components, which are the most looked at are all time-based graphs/metrics. 
+
+\begin{table}
+  \caption{The UI components, ordered by popularity with the answers by participants to questions in percentages}
+  \label{uicomponents}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{lcccc}
+    
+        & \multicolumn{1}{p{1.2cm}}{\centering Usually looked at it} & 
+        \multicolumn{1}{p{1.2cm}}{\centering Was entirely clear} & 
+        \multicolumn{1}{p{1.5cm}}{\centering Helped to understand use} & 
+        \multicolumn{1}{p{1.2cm}}{\centering Encouraged to act} \\ \hline
+        
+        \pbox{20cm}{Consumption\\ timeline} & 93\% & 53\% & 76\% & 49\% \\[0.25cm]
+        \pbox{20cm}{Consumption\\ by hour} & 87\% & 53\% & 79\% & 52\% \\[0.25cm]
+        \pbox{20cm}{Comparison with\\ previous year} & 87\% & 55\% & 58\% & 44\% \\[0.25cm]
+        \pbox{20cm}{Monthly usage} & 81\% & 49\% & 58\% & 45\% \\
+        \pbox{20cm}{Consumption insights} & 77\% & 38\% & 46\% & 47\% \\
+        \pbox{20cm}{Comparison \\with neighbor} & 67\% & 33\% & 30\% & 28\% \\[0.2cm]
+        \pbox{20cm}{Consumption by load} & 64\% & 40\% & 48\% & 31\% \\
+        \pbox{20cm}{Trend, Rank, Points} & 64\% & 32\% & 41\% & 44\% \\
+        \pbox{20cm}{Manage your\\ consumption} & 62\% & 46\% & 34\% & 35\% \\
+        \pbox{20cm}{Alerts} & 32\% & 33\% & 24\% & 19\% \\
+		\pbox{20cm}{Facebook chat} & 10\% & 27\% & 1\% & 1\% \\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+All 266 participating households reduced their electricity usage. Compared to electricity consumption of the previous year, they saved on average $31,817$ kWh during the project. This amounts to a monthly reduction of 3.7\%. In the survey, 69\% of the respondents indicated that the portal increased their understanding of how they consume electricity.
 
 
 \section{Conclusion}
