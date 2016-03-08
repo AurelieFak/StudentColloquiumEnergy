@@ -62,15 +62,15 @@
 \authorfooter{
 %% insert punctuation at end of each item
 \item
-  Roy G. Biv is with Starbucks Research, E-mail: roy.g.biv@aol.com.
+  A. Fakambi is a Computing Science Master student at the University of Groningen, E-mail: A.Fakambi@student.rug.nl.
 \item
-  Ed Grimley is with Grimley Widgets, Inc., E-mail: ed.grimley@aol.com.
+  W. Menninga is a Computing Science Master student at the University of Groningen, E-mail: W.G.Menninga@student.rug.nl.
 }
 
 %% A teaser figure is NOT to be included.
 
 %other entries to be set up for journal
-\shortauthortitle{Biv \MakeLowercase{\textit{et al.}}: Global Illumination for Fun and Profit}
+%\shortauthortitle{Biv \MakeLowercase{\textit{et al.}}: Global Illumination for Fun and Profit}
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
@@ -99,6 +99,8 @@ We expect to find the most effective methods to visualize energy consumption dat
   \CCScat{K.7.m}{The Computing Profession}{Miscellaneous}{Ethics}
 }
 
+\manuscriptnote{~}
+
 %% Copyright space is enabled by default as required by guidelines.
 %% It is disabled by the 'review' option or via the following command:
 % \nocopyrightspace
@@ -124,12 +126,16 @@ Reducing energy usage in buildings still remains a major challenge.
 
 One method of reducing energy consumption is by increasing the awareness of consumers about their energy consumption using eco-feedback systems. These are systems with integrated sensors that provide the consumers in the building with information about their energy usage. The goal is that this leads to more energy efficient behavior by the consumers in the building. 
 
-However, research has shown that the type of information displayed and the technique used to present it have an impact on the user behavior. This means that the design of the user interface is a key factor in changing the users energy consumption behavior.
+However, research has shown that the type of information displayed and the technique used to present it have an impact on the user behavior.
+For example, studies have demonstrated that the information provided must be intuitive, clear and simple and the UI attractive and not too intrusive (e.g. not too many notifications) so that the users keep using it and is integrated in their everyday life\cite{spagnolli2011eco}.
+
+This means that the design of the user interface is a key factor in changing the user's energy consumption behavior and raises the question of what the most effective methods to visualize energy consumption data for future eco-feedback systems are. 
 
 Our goal is to investigate the different ways to display to the users their electricity usage.
-The main UI components of eco-feedback systems are: historical comparison, presentation of costs, incentive, reward and commitment. From those components we want to extract the most effective ones: by effective we mean the ones which are more likely to help users save energy. Based on previous surveys we are going to compare percentage in the reduction of electricity usage according to the use of the different components. We are also going to compare different already existing UI. As criteria for the most effective ones studies have demonstrated that the information provided must be intuitive, clear and simple and the UI attractive and not too intrusive (e.g. not too many notifications) so that the users keep using it and is integrated in their everyday life.
+The main UI components of eco-feedback systems are: historical comparison, presentation of costs, incentive, reward and commitment. From those components we want to extract the most effective ones: the ones which are more likely to help users save energy. 
 
-This raises the question of what the most effective methods to visualize energy consumption data for future eco-feedback systems are. 
+Based on previous surveys we are going to compare the effectiveness of different eco-feedback systems by comparing the reduction in electricity usage. Additionally, we will combine the results/responses of surveys and interviews with users of such eco-feedback systems, to assess the effectiveness of different UI components. 
+%
 
 % to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
 
@@ -138,11 +144,11 @@ This raises the question of what the most effective methods to visualize energy 
 %It has been shown in many studies that feedback systems have effect in reducing energy consumption
 % design of user interface is a key factor to have impact on energy behavior
 \section{User Interface components}
-Developers have been implementing different types of applications which can be classical ECF systems or either games ( ex *** ) to make it even more attractive to the users : saving energy in a playful way.
+Developers have been implementing different types of applications which can be classical eco-feedback systems or either games ( ex *** ) to make it even more attractive to the users : saving energy in a playful way.
 They are available on smart meter, personal computer, mobile devices and house/wall displays. \\
 
 
-In most of the ECF systems some design components are ofen encountered.
+In most of the eco-feedback systems some design components are ofen encountered.
 In this part they will be defined and later their effect on users changing behavior will be discussed in order to elect the most effectives ones. \\
 
 Feedback
@@ -154,8 +160,8 @@ Presentation of costs
 Comparison 
 Two types of comparison are often presented : historical and normative .
 Historical comparison is defined as  “the ability of users to view their current consumption relative to past consumption” . SOURCE
-It can be displayed on a daily weekly, monthly or yearly basis. It is used in the majority of ECF systems because it can be easily understood by the users, especially thanks to the graphs mode display. Observing those graphs help them reminding their behavior ( why they used more energy this particular day for example ) and in consequence change their bad habits.
-Most of the time in the historical comparison factors such as weather or households leaving for vacation aren't taken into account so absolute values are analyzed whereas they should have been normalised first. Some improvements in the ECF systems take those fluctuations/changes into account for more accuracy and consistency.
+It can be displayed on a daily weekly, monthly or yearly basis. It is used in the majority of eco-feedback system systems because it can be easily understood by the users, especially thanks to the graphs mode display. Observing those graphs help them reminding their behavior ( why they used more energy this particular day for example ) and in consequence change their bad habits.
+Most of the time in the historical comparison factors such as weather or households leaving for vacation aren't taken into account so absolute values are analyzed whereas they should have been normalised first. Some improvements in the eco-feedback system systems take those fluctuations/changes into account for more accuracy and consistency.
 So the historical comparison deals with comparison with the household's prior consumption whereas normative comparison deals with comparison at a local, regional level or in a neighborhood. The effectiveness of the normative comparison comes from the fact that users are influenced by social norms and pressure, seeing for example that their neighbors consume less energy than they do should encourage them to do the same.
 
 Somes studies have shown that users are frustrated.
@@ -166,8 +172,8 @@ We'll see in the Survey part that the historical comparison is the most effectiv
 Goal setting 
 Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior. Some EFC systems provide goal settings design components : the users can set them goal themselves or they come from the software itself or the community of users of the EFC. Example of goal : “ reduce your energy consumption to 10% from the previous month “.
 Every household consumes in a different way so the households in the same neighborhood are not likely to have the same goals.
-ECF can help users to reach their goal thanks to tips and advices.
-To create an energy saving positive dynamic the ECF should reward their users when they aim their goal. 
+eco-feedback system can help users to reach their goal thanks to tips and advices.
+To create an energy saving positive dynamic the eco-feedback system should reward their users when they aim their goal. 
 
 Commitment
 Disaggregation or appliance specific breakdown allow user to have a better understanding in which appliance consumes what so it's easier for them to change a particular behavior. It helps understand the impact of a specific behavior or appliance. ( ex : if I let the TV on for 5 hours ,how much do I consume ? )
