@@ -277,9 +277,28 @@ Participants were also asked some general questions about how important they fin
 The results of this study by Karjalainen found the following UI components most valued by consumers: presentation of costs, device-specific breakdown of energy usage and historical comparison.
 ~\\
 
-%TODO: new study with normative comparison
+Research from 2010 by Peschiera et al.\cite{peschiera2010response} provides more insight into the effectiveness of the \textit{normative comparison} component. In their study, they tried to find out if there are differences in energy savings when participants only view personal electricity usage information versus participants also viewing average building occupant usage and usage of peers in their personal network.
 
-Another study from R.K. Jain et al\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key design components:
+To examine if such normalized comparison information motivates electricity-saving behavior, they fitted 83 rooms of a dormitory building in New York City to measure the electricity usage.
+
+They divided the occupants participating in the study into four distinct groups:
+\begin{itemize}
+\item \textit{Group A} -- ability to view individual historical comparison with past vs. present utilization.
+\item \textit{Group B} -- same as group A, but with additional ability to view individual vs. average electricity usage of all other participating occupants.
+\item \textit{Group C} -- same as group B, but with additional ability to view electricity usage of peers in that individual's network.
+\item \textit{Control Group} -- No access to electricity usage information.
+\end{itemize}
+
+At the start of the study, occupants received an email explaining how to access their personal electricity consumption reports. During the study, they received several more notification emails to remind them that their electricity usage report was ready.
+
+Three days after the initial email, the average electricity consumption for Group C was 34\% lower than the consumption of the Control Group and 20\% lower than the consumption in the period before the study.
+After sending the second consumption notification email, the average electricity consumption dropped to 45\% below that of the Control Group (28\% less than before the study).
+Group B only saw a significant reduction after the second notification email and Group A did not have a significant improvement.
+
+These results show the added value of using electricity consumption data from peer networks (\textit{normalized comparison}) in reducing consumers energy consumption.
+~\\
+
+Another study from R.K. Jain et al.\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key design components:
 \begin{itemize}
 \item \textit{Historical comparison} - ability to view historical electricity consumption in three modes (24h, to date and last week)
 \item \textit{Normative comparison} - ability to view the average electricity consumption of friends
@@ -411,19 +430,19 @@ The first four components, which are the most looked at are all time-based graph
     \begin{tabular}{lcccc}
     
         & \multicolumn{1}{p{1.2cm}}{\centering Usually looked at it} & 
-        \multicolumn{1}{p{1.2cm}}{\centering Was entirely clear} & 
-        \multicolumn{1}{p{1.5cm}}{\centering Helped to understand use} & 
+        \multicolumn{1}{p{1.0cm}}{\centering Was entirely clear} & 
+        \multicolumn{1}{p{1.3cm}}{\centering Helped to understand use} & 
         \multicolumn{1}{p{1.2cm}}{\centering Encouraged to act} \\ \hline
         
         \pbox{20cm}{Consumption\\ timeline} & 93\% & 53\% & 76\% & 49\% \\[0.25cm]
         \pbox{20cm}{Consumption\\ by hour} & 87\% & 53\% & 79\% & 52\% \\[0.25cm]
         \pbox{20cm}{Comparison with\\ previous year} & 87\% & 55\% & 58\% & 44\% \\[0.25cm]
-        \pbox{20cm}{Monthly usage} & 81\% & 49\% & 58\% & 45\% \\
-        \pbox{20cm}{Consumption insights} & 77\% & 38\% & 46\% & 47\% \\
-        \pbox{20cm}{Comparison \\with neighbor} & 67\% & 33\% & 30\% & 28\% \\[0.2cm]
-        \pbox{20cm}{Consumption by load} & 64\% & 40\% & 48\% & 31\% \\
-        \pbox{20cm}{Trend, Rank, Points} & 64\% & 32\% & 41\% & 44\% \\
-        \pbox{20cm}{Manage your\\ consumption} & 62\% & 46\% & 34\% & 35\% \\
+        \pbox{20cm}{Monthly usage} & 81\% & 49\% & 58\% & 45\% \\[0.1cm]
+        \pbox{20cm}{Consumption\\ insights} & 77\% & 38\% & 46\% & 47\% \\[0.25cm]
+        \pbox{20cm}{Comparison \\with neighbor} & 67\% & 33\% & 30\% & 28\% \\[0.25cm]
+        \pbox{20cm}{Consumption\\ by load} & 64\% & 40\% & 48\% & 31\% \\[0.20cm]
+        \pbox{20cm}{Trend, Rank, Points} & 64\% & 32\% & 41\% & 44\% \\[0.05cm]
+        \pbox{20cm}{Manage your\\ consumption} & 62\% & 46\% & 34\% & 35\% \\[0.1cm]
         \pbox{20cm}{Alerts} & 32\% & 33\% & 24\% & 19\% \\
 		\pbox{20cm}{Facebook chat} & 10\% & 27\% & 1\% & 1\% \\
     \end{tabular}
@@ -439,9 +458,9 @@ In this paper, we looked at different user interface components used in eco-feed
 Out of several studies, it can be concluded that interface components that present information in charts and tables are easily understood by consumers, especially when they concern time-based graphs/metrics. 
 Most valued by consumers are UI components that present information about costs, per-device-breakdown of electricity usage and historical comparison.
 
-The use of incentives to motivate consumers to save electricity is also effective in making consumers use the eco-feedback system, especially when they start with a positive number of points.
+It can also be concluded that using electricity usage information from peer networks can lead to more consistent energy saving when compared to only showing the users own electricity usage.
 
-%TODO: mention normative comparison
+The use of incentives to motivate consumers to save electricity is also effective in making consumers use the eco-feedback system, especially when they start with a positive number of points.
 
 
 %% if specified like this the section will be ommitted in review mode
