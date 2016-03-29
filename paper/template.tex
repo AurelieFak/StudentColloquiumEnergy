@@ -74,7 +74,8 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{Saving energy in buildings has become and remains a major issue for the planet. The last decade, systems have been developed to provide consumers with information about their energy consumption. 
+\abstract{Saving energy in buildings has become and remains a major issue for the planet.% AURELIE COMMENT : WHY IS IT AN ISSUE AND A CHALLENGE ?
+The last decade, systems have been developed to provide consumers with information about their energy consumption. 
 Research has shown that the type of information displayed and the techniques used to present it have an impact on the user energy saving. This raises the question about how to display the information to the consumer in a comprehensive, attractive and non-intrusive way. \\
 
 In this paper we compare and discuss the various methods of visualizing energy usage for consumers. Some of the design components of user interfaces such as historical comparisons and presentation of costs are more likely to aid in providing the consumer with an understanding of his energy usage and changing his behavior.
@@ -83,6 +84,7 @@ We will extract the most effective methods from research and surveys. \\
 The comparison of the different methods is based on the reduction of energy usage of consumers using such eco-feedback systems and if consumers keep using the eco-feedback systems for longer periods of time.
 
 Little work has been done in the design of eco-feedback systems. We expect to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
+% AURELIE COMMENT ADD THE RESULTS - We can conclude that design components such as historical comparison,presentations of corsts are the most effective ones, they increase the users awareness.
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -135,19 +137,28 @@ Our goal is to investigate the different ways to display to the users their elec
 The main UI components of eco-feedback systems are: historical comparison, presentation of costs, incentive, reward and commitment. From those components we want to extract the most effective ones: the ones which are more likely to help users save energy. 
 
 Based on previous surveys we are going to compare the effectiveness of different eco-feedback systems by comparing the reduction in electricity usage. Additionally, we will combine the results/responses of surveys and interviews with users of such eco-feedback systems, to assess the effectiveness of different UI components. 
-%
 
-% to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
+% AURELIE COMMENT :
+We aim at answering many questions in our paper, many deicisons has to be made when designing such systems : \\
+\textbf{what type of data} should be displayed ? \\
+\textbf{how} should the data be displayed to users ? \\
+\textbf{which time scale} should be chosen to display those data ? 
+
+In the first part the design components will be presented, in a second part surveys and in the third part our conclusion % To be improved
+
+%to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
 
 % 'integrating sensors and systems to create eco feedback systems' which provide people in building with information about energy consumption behavior 
 % many studies have shown that feedback works effectively...[ref]
 %It has been shown in many studies that feedback systems have effect in reducing energy consumption
 % design of user interface is a key factor to have impact on energy behavior
 \section{User Interface components}
-Developers have been implementing different types of applications: classical eco-feedback systems or either games %( ex *** )
-to make it even more attractive to the users and increase engagement.
+Developers have been implementing different types of applications: classical eco-feedback systems or either serious games (eg. games which the purpose isn't just entertainment) %( ex *** ) 
+to make it even more attractive to the users and increase their commitment.
 
-These eco-feedback systems are available on smart meter, personal computer, mobile devices and house/wall displays. %TODO what is better??
+\subsection{Displays}
+These eco-feedback systems are available on smart meter, personal computer, mobile devices and house/wall displays. %TODO what is better?? 
+% AURELIE COMMENT : should we have a part only for the displays
 
 Important aspects of eco-feedback systems are the kind of information displayed and the method of display. However, the aesthetics are also relevant for the engagement, pleasure and interest of the user\cite{bartram2015design}.
 
@@ -172,9 +183,12 @@ The historical comparison deals with comparison with the household's own prior c
 
 \newpage
 \subsection{Goal setting}
-Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior. Some eco-feedback systems provide goal settings design components: the users can set the goal themselves or they come from the software itself or the community of users of the eco-feedback system. An example of a goal could be: `reduce your energy consumption with 5\% compared to the previous month'.
+Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior. Some eco-feedback systems provide goal settings design components: the users can set the goal themselves or they come from the software itself or the community of users of the eco-feedback system.  %AURELIE new :
+One way to generate goal setting is to calculate a baseline of energy consumption based on past usage and then set the goal as some percentage reduction from the baseline. % the computation of this baseline won't be presented in here
+An example of a goal could be: "reduce your energy consumption with 5\% compared to the previous month".
 
 Every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals.
+
 
 Eco-feedback systems can aid users to reach their goal thanks to tips and advices.
 To create an energy saving positive dynamic the eco-feedback system should reward their users when they reach their goal. 
@@ -189,14 +203,17 @@ Rewards and penalization allow users to earn rewards if they reduce their energy
 The incentive design component is related to the rewards \& penalization design components. Users can be rewarded in a financial or non-financial way. Financial incentives can be credit on a electricity bill and non financial incentives can be prices such as an energy efficient lamp or reaching higher levels in the game.
 Previous research \cite{petersen2007dormitory} has shown that incentives can result in significant electricity use reductions.
 
-%\section{Presentation of the information inside the components : graphical, numerical and textual presentation} % Neeeed a better title
-%In this section the following questions will be answered : What is the best and most effective way to present the information inside the key design components identified in the previous part ? What do the users understand easily texts or graphs ?
+\section{Presentation of the information inside the components : graphical, numerical and textual presentation} % Neeeed a better title
+In this section the following questions will be answered : What is the best and most effective way to present the information inside the key design components identified in the previous part ? What do the users understand easily texts or graphs ?
 %Kind of presentation that the users prefere graphical vs Text => guidelines of Smith and Mosier
 %More information about the chart pie, bar chart, tabular presentation understanding among users.
 
 \section{The Surveys}
-Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before.
+Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before in order to get a better understanding of what the users wants to see and to help him. % BLABLABLA, user-centered perspecive
 This section will discuss the results of some of these studies. \\
+% In this part four surveys and their results will be presented. The surveyx can be divided in two parts: the ones who try to define the users wished and the ones where the users compared different design components
+% User-wishes surveys
+% Protoypes surveys
 
 In a study from S. Karjalainen\cite{karjalainen2011consumer} from 2010, interviewing and paper prototyping were used to find the best ways to present information for maximum energy reductions. In this study, interviews with consumers were held to find out about their attitude towards energy monitoring and what kind of feedback they understand and prefer.
 
