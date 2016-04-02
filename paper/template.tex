@@ -184,7 +184,6 @@ Another type of comparison is the normative one, which deals with comparison at 
 
 %We will see in the Survey section that the historical comparison is the most effective one.
 
-\newpage
 \subsection{Goal setting}
 Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior. Some eco-feedback systems provide goal settings design components: the users can set the goal themselves or they come from the software itself or the community of users of the eco-feedback system.  %AURELIE new :
 One way to generate goal setting is to calculate a baseline of energy consumption based on past usage and then set the goal as some percentage reduction from the baseline. % the computation of this baseline won't be presented in here
@@ -212,34 +211,53 @@ In this section the following questions will be answered : What is the best and 
 %More information about the chart pie, bar chart, tabular presentation understanding among users.
 
 \section{The Surveys}
-
-Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before in order to get a better understanding of what the users wants to see and to help him. % BLABLABLA, user-centered perspecive
-[[Short intro about studies: Several studies blabla...]]
-
-\subsection{Comparison}
-\subsection{Goals}
-From study X, conducted by Yadayada et al., it appears that goal setting can be super nice. They did xyz and the results were 3 times less energy used.......
-\subsection{Incentives}
-
 Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before.
-
-This section will discuss the results of some of these studies. \\
+This section will describe a selection of those studies and analyze the results.
+The studies can be divided into two components: a user wishes component and a comparative component.
+ \\
 % In this part four surveys and their results will be presented. The surveys can be divided in two parts: the ones who try to define the users wishes, and the ones where the users compare different design components.
 % User-wishes surveys
 % Protoypes surveys
 
 % For each survey we need to analyse
 \subsection{User wishes surveys}
-In this subsection BLABLABLABLA
+Several past studies have done a user wishes survey, exploring the opinions of users (generally household consumers) by asking them a set of questions. \\
+
+In a study from S. Karjalainen\cite{karjalainen2011consumer} from 2010, interviewing was used to find the best ways to present information for maximum energy reductions. In this study, interviews with consumers were held to find out about their attitude towards energy monitoring and what kind of feedback they understand and prefer.
+
+The qualitative interviews showed that 8 out of 14 interviewees actively try to save electricity at home, while all 14 responded they want to monitor electricity consumption. The interviewees also indicated that they prefer to receive feedback via a bill, web page or dedicated wall display rather than a mobile phone.
+
+Participants were also asked some general questions about how important they find certain aspects of eco-feedback systems. The questions were answered using a scale of 1 to 5, where 5 was very important and 1 not important at all. The questions, along with the average of the response of the 14 participants, can be seen in Table~\ref{prototypesquestions}.
+
+% results
+\begin{table}
+%% Table captions on top in journal version
+  \caption{General questions about eco-feedback systems}
+  \label{prototypesquestions}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{|ll|}
+    \hline
+       Question (\textit{How important is it to...}) & Avg. \\ \hline
+       \pbox{20cm}{\textit{be able to compare your household's consumption}\\\textit{to other households?}} & 3.6 \\ ~\\[-0.25cm]
+       \textit{be able to compare your consumption to your prior consumption?} & 4.4 \\ 
+       \textit{have a target level for consumption?} & 3.5 \\ 
+       \textit{know the consumption of individual devices?} & 4.1 \\ 
+       \textit{receive information on actions which would save energy?} & 3.9 \\
+       \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% OUR OWN SURVEY
+$<<$INSERT OUR OWN SURVEY STUFF HERE]]$>>$ \\
+
+
 
 \subsection{Comparison/comparative surveys} %better title to be found
-In this subsection BLABLABLABLA
+Studies in the past have also collected data about energy consumer behavior in response to several different eco-feedback systems. These eco-feedback systems have different UI components and can therefore be used for a comparative analysis.\\
 
-In a study from S. Karjalainen\cite{karjalainen2011consumer} from 2010, interviewing and paper prototyping were used to find the best ways to present information for maximum energy reductions. In this study, interviews with consumers were held to find out about their attitude towards energy monitoring and what kind of feedback they understand and prefer.
-
-The qualitative interviews showed that 8 out of 14 interviewees actively try to save electricity at home, while all 14 responded they want to monitor electricity consumption. The interviewees also indicated that they prefer to receive feedback via a bill, web page or dedicated wall display rather than a mobile phone. \\
-
-Additionally, 8 paper user interface prototypes were developed. Table~\ref{prototypes} shows an overview of the UI components present in these prototypes.
+In the study from S. Karjalainen\cite{karjalainen2011consumer}, 8 paper user interface prototypes were developed. Table~\ref{prototypes} shows an overview of the UI components present in these prototypes.
 
 \begin{table}
 %% Table captions on top in journal version
@@ -303,29 +321,8 @@ In contrast, information presented in charts and tables is understood easily by 
 
 \underline{Analysis}
 
-Participants were also asked some general questions about how important they find certain aspects of eco-feedback systems. The questions were answered using a scale of 1 to 5, where 5 was very important and 1 not important at all. The question with the average of the response of the 14 participants can be seen in Table~\ref{prototypesquestions}.
+The results of this study by Karjalainen found the following UI components most valued by consumers: presentation of costs, device-specific breakdown of energy usage and historical comparison.  % TODO: why?
 
-% results
-\begin{table}
-%% Table captions on top in journal version
-  \caption{General questions about eco-feedback systems}
-  \label{prototypesquestions}
-  \scriptsize
-  \begin{center}
-    \begin{tabular}{|ll|}
-    \hline
-       Question (\textit{How important is it to...}) & Avg. \\ \hline
-       \pbox{20cm}{\textit{be able to compare your household's consumption}\\\textit{to other households?}} & 3.6 \\ ~\\[-0.25cm]
-       \textit{be able to compare your consumption to your prior consumption?} & 4.4 \\ 
-       \textit{have a target level for consumption?} & 3.5 \\ 
-       \textit{know the consumption of individual devices?} & 4.1 \\ 
-       \textit{receive information on actions which would save energy?} & 3.9 \\
-       \hline
-    \end{tabular}
-  \end{center}
-\end{table}
-
-The results of this study by Karjalainen found the following UI components most valued by consumers: presentation of costs, device-specific breakdown of energy usage and historical comparison.
 ~\\
 
 Research from 2010 by Peschiera et al.\cite{peschiera2010response} provides more insight into the effectiveness of the \textit{normative comparison} component. In their study, they tried to find out if there are differences in energy savings when participants only view personal electricity usage information versus participants also viewing average building occupant usage and usage of peers in their personal network.
