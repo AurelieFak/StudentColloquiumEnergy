@@ -128,10 +128,10 @@ Reducing energy usage in buildings still remains a major challenge.
 
 One method of reducing energy consumption is by increasing the awareness of consumers about their energy consumption using eco-feedback systems. These are systems with integrated sensors that provide the consumers in the building with information about their energy usage. The goal is that this leads to more energy efficient behavior by the consumers in the building. 
 
-However, research has shown that the type of information displayed and the technique used to present it have an impact on the user behavior.
+However, research has shown that the types of information displayed and the techniques used to present it have an impact on the user behavior.
 For example, studies have demonstrated that the information provided must be intuitive, clear and simple and the UI attractive and not too intrusive (e.g. not too many notifications) so that the users keep using it and is integrated in their everyday life\cite{spagnolli2011eco}.
 
-This means that the design of the user interface is a key factor in changing the user's energy consumption behavior and raises the question of what the most effective methods to visualize energy consumption data for future eco-feedback systems are. 
+This means that the design of the user interface is a key factor in changing the user energy consumption behavior of the user and raises the question of what the most effective methods to visualize energy consumption data for future eco-feedback systems are. 
 
 % to be corrected ?
 Our goal is to investigate the different ways to display to the users their electricity usage.
@@ -154,12 +154,12 @@ In the first part the design components will be presented, in a second part surv
 % many studies have shown that feedback works effectively...[ref]
 %It has been shown in many studies that feedback systems have effect in reducing energy consumption
 % design of user interface is a key factor to have impact on energy behavior
-\section{User Interface components}
-Developers have been implementing different types of applications: classical eco-feedback systems or either serious games (eg. games which the purpose isn't just entertainment) %( ex *** ) 
+\section{Eco-Feedback System Design}
+Developers have been implementing different types of applications: classical eco-feedback systems or serious games (e.g. games which the purpose is not just entertainment) %( ex *** ) 
 to make it even more attractive to the users and increase their commitment.
 
 \subsection{Displays}
-These eco-feedback systems are available on smart meter, personal computer, mobile devices and house/wall displays. %TODO what is better?? 
+These eco-feedback systems are available on smart meters, personal computers, mobile devices and house/wall displays. %TODO what is better?? 
 % AURELIE COMMENT : should we have a part only for the displays
 
 Important aspects of eco-feedback systems are the kind of information displayed and the method of display. However, the aesthetics are also relevant for the engagement, pleasure and interest of the user\cite{bartram2015design}.
@@ -171,39 +171,47 @@ In this part they will be defined and later we will discuss their effect on user
 %Indirect
 %Inadvertent
 %Presentation of costs
+\subsection{User Interface Components}
+The following sections describe the different UI components often used in the design of eco-feedback systems.
+\subsubsection{Consumption over time}
+The \textit{consumption over time} UI component is one of the most basic components. It simply displays the consumption of energy over time. Usually, several time scales can be selected, like the last few hours, days or weeks.
+Almost all eco-feedback systems have a component like this one \cite{spagnolli2011eco}.
 
-\subsection{Comparison}
+\subsubsection{Historical \& normative comparison}
 Two types of comparison are often presented in eco-feedback systems: historical and normative.
-Historical comparison is defined as the ability of users to view their current consumption compared to their past consumption. %SOURCE
-The historical comparison can often be displayed on a daily, weekly, monthly or yearly basis. It is used in the majority of eco-feedback systems, because it can be easily understood by the users, especially thanks to the use of bar charts (cf part BLABLABLA). Observing those graphs helps them reminding their behavior (why they used more energy this particular day for example) and in consequence change their bad habits.
 
-Most eco-feedback systems do not take into account factors such as weather (household use more energy when it is colder) or households leaving for vacation when establishing the historical comparison\cite{karjalainen2011consumer}. This means that absolute values are analyzed whereas they should have been normalized first. Some improvements in the eco-feedback systems take those fluctuations and changes into account for more accuracy and consistency.
+\textit{Historical comparison} is defined as the ability of users to view their current consumption compared to their past consumption. %SOURCE
+The historical comparison can often be displayed on a daily, weekly, monthly or yearly basis. It is used in the majority of eco-feedback systems, because it can be easily understood by the users, especially thanks to the use of bar charts. %(cf part BLABLABLA).
+Observing those graphs helps reminding users of their behavior (why they used more energy this particular day for example) and in consequence aids in changing their bad habits.
+
+Most eco-feedback systems do not take into account factors such as weather (more energy is used when it is colder) or households leaving for vacation when establishing the historical comparison\cite{karjalainen2011consumer}. This means that absolute values are analyzed whereas they should have been normalized first. Some improvements in the eco-feedback systems take those fluctuations and changes into account for more accuracy and consistency. \\
 
 %The historical comparison deals with comparison with the household's own prior consumption 
-Another type of comparison is the normative one, which deals with comparison at a local, regional level or in a neighborhood. The effectiveness of the normative comparison comes from the fact that users are influenced by social norms and pressure. Seeing, for example, that their neighbors consume less energy than they do should encourage them to do the same. It has been seen in previous research that such normative comparisons can lead to significant reductions in electricity usage\cite{peschiera2010response,siero1996changing,iyer2006comparison}.
+Another type of comparison is the \textit{normative comparison}, which deals with comparison at a local, regional level or in a neighborhood. The effectiveness of the normative comparison comes from the fact that users are influenced by social norms and pressure. Seeing, for example, that their neighbors consume less energy than they do should encourage them to do the same. It has been seen in previous research that such normative comparisons can lead to significant reductions in electricity usage\cite{peschiera2010response,siero1996changing,iyer2006comparison}.
 
 %We will see in the Survey section that the historical comparison is the most effective one.
 
-\subsection{Goal setting}
-Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior. Some eco-feedback systems provide goal settings design components: the users can set the goal themselves or they come from the software itself or the community of users of the eco-feedback system.  %AURELIE new :
-One way to generate goal setting is to calculate a baseline of energy consumption based on past usage and then set the goal as some percentage reduction from the baseline. % the computation of this baseline won't be presented in here
-An example of a goal could be: "reduce your energy consumption with 5\% compared to the previous month".
+\subsubsection{Incentives}
+\textit{Incentives} (rewards and penalization) allow users to earn rewards if they reduce their energy consumption or on the contrary to be penalized if they waste energy. The idea is that a system of rewards and penalization encourages behavior that leads to energy conservation and discourages wasteful behavior.
+
+The incentive design component is strongly related to the rewards \& penalization design components. Users can be rewarded in a financial or non-financial way. Financial incentives can be, for example, credit on an electricity bill and non-financial incentives can be prizes such as an energy efficient lamp or reaching higher levels in the game.
+Previous research \cite{petersen2007dormitory} has shown that incentives can result in significant reductions of the electricity consumption.
+
+\subsubsection{Disaggregation or appliance specific breakdown}
+\textit{Disaggregation} or appliance-specific breakdown allows consumers to have a better understanding about which appliance consumes what, so it is easier for them to change a particular behavior. It helps consumers to understand the impact of a specific behavior or the use of an appliance to answers questions like ``if I let the TV on for 5 hours, how much do I consume?".
+%However this design component is C'est toujours à l'étape de recherche because installing and maintaining individual sensors is difficult.
+
+\subsubsection{Goal setting}
+Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior \cite{abrahamse2007effect}.
+Some eco-feedback systems provide \textit{goal setting} design components: the users can set the goal themselves or they are pre-configured by the software itself or set by the community of users of the eco-feedback system.  %AURELIE new :
+One way to generate a goal setting is to calculate a baseline of energy consumption based on past usage and then set the goal as some percentage reduction from the baseline. % the computation of this baseline won't be presented in here
+An example of a goal could be: ``reduce your energy consumption with 5\% compared to the previous month''.
 
 Every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals.
-
-
 Eco-feedback systems can aid users to reach their goal thanks to tips and advices.
 To create an energy saving positive dynamic the eco-feedback system should reward their users when they reach their goal. 
 
-\subsection{Disaggregation or appliance specific breakdown}
-Disaggregation or appliance-specific breakdown allows consumers to have a better understanding about which appliance consumes what so it is easier for them to change a particular behavior. It helps consumers to understand the impact of a specific behavior or the use appliance to answers questions like ``if I let the TV on for 5 hours, how much do I consume?".
-%However this design component is C'est toujours à l'étape de recherche because installing and maintaining individual sensors is difficult.
 
-\subsection{Reward \& penalization / incentives}
-Rewards and penalization allow users to earn rewards if they reduce their energy consumption or in the contrary to be penalized if they waste energy. The idea is that a system of rewards and penalization encourages behavior that leads to energy conservation and discourages wasteful behavior.
-
-The incentive design component is related to the rewards \& penalization design components. Users can be rewarded in a financial or non-financial way. Financial incentives can be credit on a electricity bill and non financial incentives can be prices such as an energy efficient lamp or reaching higher levels in the game.
-Previous research \cite{petersen2007dormitory} has shown that incentives can result in significant electricity use reductions.
 
 \section{Presentation of the information inside the components : graphical, numerical and textual presentation} % Neeeed a better title
 In this section the following questions will be answered : What is the best and most effective way to present the information inside the key design components identified in the previous part ? What do the users understand easily texts or graphs ?
@@ -326,7 +334,7 @@ The results of this study by Karjalainen found the following UI components most 
 
 ~\\
 
-Research from 2010 by Peschiera et al.\cite{peschiera2010response} provides more insight into the effectiveness of the \textit{normative comparison} component. In their study, they tried to find out if there are differences in energy savings when participants only view personal electricity usage information versus participants also viewing average building occupant usage and usage of peers in their personal network.
+Research from 2010 by Peschiera et al.\cite{peschiera2010response} provides more insight into the effectiveness of the normative comparison component. In their study, they tried to find out if there are differences in energy savings when participants only view personal electricity usage information versus participants also viewing average building occupant usage and usage of peers in their personal network.
 
 %FIXME: the following part is too 'narrative' and 'detailed'
 To examine if such normalized comparison information motivates electricity-saving behavior, they fitted 83 rooms of a dormitory building in New York City to measure the electricity usage.
@@ -345,7 +353,7 @@ Three days after the start of the study, the average electricity consumption for
 After sending the second consumption notification email, the average electricity consumption dropped to 45\% below that of the Control Group (28\% less than before the study).
 Group B only saw a significant reduction after the second notification email and Group A did not have a significant improvement.
 
-These results show the added value of using electricity consumption data from peer networks (\textit{normalized comparison}) in reducing consumers energy consumption. Building occupants that were shown data of their peers or the average usage saved more energy than users that did not receive this information.
+These results show the added value of using electricity consumption data from peer networks (normalized comparison) in reducing consumers energy consumption. Building occupants that were shown data of their peers or the average usage saved more energy than users that did not receive this information.
 ~\\
 
 In another study, from R.K. Jain et al.\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key UI design components:
@@ -389,9 +397,9 @@ In Table~\ref{hypo1}, the results of performing an analysis of the login data ca
   \end{center}
 \end{table}
 
-Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the \textit{historical comparison} feature, on average logged in 3 more times than users that did not use that feature. Additionally, users that used the \textit{incentives} feature logged in more than 3 additional times compared to users that did not use that feature.
+Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the historical comparison feature, on average logged in 3 more times than users that did not use that feature. Additionally, users that used the incentives feature logged in more than 3 additional times compared to users that did not use that feature.
 
-For the \textit{normative comparison} and \textit{disaggregation} features, there was no significant increase in the number of logins. \\
+For the normative comparison and disaggregation features, there was no significant increase in the number of logins. \\
 
 \begin{table}
   \caption{Correlation between user logins and the use of specific design components}
