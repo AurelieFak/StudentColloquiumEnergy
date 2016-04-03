@@ -1,3 +1,4 @@
 *.synctex.gz
 *.blg
 *.bbl
+/paper_draft.pdf

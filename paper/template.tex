@@ -215,6 +215,7 @@ Several studies researching the effectiveness of consumer feedback on electricit
 This section will describe a selection of those studies and analyze the results.
 The studies can be divided into two components: a user wishes component and a comparative component.
  \\
+ TODO: HOW DID WE SELECT THE PAPERS
 % In this part four surveys and their results will be presented. The surveys can be divided in two parts: the ones who try to define the users wishes, and the ones where the users compare different design components.
 % User-wishes surveys
 % Protoypes surveys
@@ -388,7 +389,7 @@ In Table~\ref{hypo1}, the results of performing an analysis of the login data ca
   \end{center}
 \end{table}
 
-Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the \textit{historical comparison} feature, on average logged in 3 more times that users that did not use that feature. Additionally, users that used the \textit{incentives} feature logged in more that 3 additional times compared to users that did not use that feature.
+Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the \textit{historical comparison} feature, on average logged in 3 more times than users that did not use that feature. Additionally, users that used the \textit{incentives} feature logged in more than 3 additional times compared to users that did not use that feature.
 
 For the \textit{normative comparison} and \textit{disaggregation} features, the correlation in the data was not strong enough to draw any conclusion. \\
 
@@ -428,8 +429,13 @@ In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users wh
   \end{center}
 \end{table}
 
+We can conclude based on this study that the use of normative comparison and incentives may lead to more energy savings and that emphasizing rewards over penalization may increase energy savings even more. 
+Incentives and historical comparison also increase the engagement of users of this eco-feedback system.\\
+TODO: HOW MUCH ENERGY WAS SAVED??
+\\~\\
 
-In another paper, Erickson et al.\cite{erickson2013dubuque} build a city-scale eco-feedback system aimed at reducing electricity consumption. The system provided households with fine-grained feedback about the electricity usage and has incentives, comparisons and goal setting for encouragement to save energy. \\
+
+In another paper, Erickson et al.\cite{erickson2013dubuque} developed a city-scale eco-feedback system aimed at reducing electricity consumption. The system provided households with fine-grained feedback about the electricity usage and has incentives, comparisons and goal setting for encouragement to save energy. \\
 
 \begin{figure}[h]
 	\centering
@@ -448,11 +454,12 @@ The user interface of the portal can be seen in Figure~\ref{fig:electricityporta
 \item Links to general information.
 \end{enumerate}
 
-The portal was made available 765 households in a few contiguous neighborhoods in the city of Dubuque in the United States and the project ran for about 20 weeks. Use of the portal was logged and surveys and interviews were held to find out about the experiences of the users of the portal.
+The portal was made available to 765 households in a few contiguous neighborhoods in the city of Dubuque in the United States and ran for about 20 weeks. Use of the portal was logged and surveys and interviews were held to find out about the experiences of the users of the portal.
 
 %results
 %  numbaahs
-Out of 765 households, 266 (35\%) logged into the portal at least one time. In the survey, respondents were asked to estimate how often they used the portal. The responses were as follows:
+%Out of 35\% of households in the study logged into the portal at least one time.
+In the survey, respondents were asked to estimate how often they used the portal. The responses were as follows:
 \begin{enumerate}
 \item five or more times per week -- 12\%
 \item about once a week -- 18\%
@@ -461,9 +468,10 @@ Out of 765 households, 266 (35\%) logged into the portal at least one time. In t
 \item not applicable / do not recall -- 14\%
 \end{enumerate}
 
-In the survey, participants were also asked about the UI components whether they usually looked at them, if they needed more explanation, if it helped them to better understand their electricity consumption and if it encouraged them to undertake action. The responses in percentages to these questions can be seen in Table~\ref{uicomponents}. %TODO: consclusion based on table 7
+In the survey, participants were also asked about the UI components. They were asked whether they usually looked at them, if they needed more explanation, if it helped them to better understand their electricity consumption and if it encouraged them to undertake action. The responses in percentages to these questions can be seen in Table~\ref{uicomponents}.
 
-The first four components, which are the most looked at are all time-based graphs/metrics. 
+From these results it can be concluded that the historical consumption (consumption timeline/consumption by hour) are the most popular. Also the component displaying the comparison with own prior use (historical comparison) was used often.
+he first four components, which are the most looked at are all time-based graphs/metrics. 
 
 \begin{table}
   \caption{The UI components, ordered by popularity with the answers by participants to questions in percentages}
@@ -487,24 +495,66 @@ The first four components, which are the most looked at are all time-based graph
         \pbox{20cm}{Trend, Rank, Points} & 64\% & 32\% & 41\% & 44\% \\[0.05cm]
         \pbox{20cm}{Manage your\\ consumption} & 62\% & 46\% & 34\% & 35\% \\[0.1cm]
         \pbox{20cm}{Alerts} & 32\% & 33\% & 24\% & 19\% \\
-		\pbox{20cm}{Facebook chat} & 10\% & 27\% & 1\% & 1\% \\
     \end{tabular}
   \end{center}
 \end{table}
 
 All 266 participating households reduced their electricity usage. Compared to electricity consumption of the previous year, they saved on average $31,817$ kWh during the project. This amounts to a monthly reduction of 3.7\%. In the survey, 69\% of the respondents indicated that the portal increased their understanding of how they consume electricity.
 
-%\section{Results}
-%The previous parts and the guidelines that some eco-feedbacks systems researches have established allow us to extract some requirements that the UI of eco-feedback should meet in order help the developers implementing softwares as effective as possible for the users. In the first subsection "famous" guidelines will be presented and in the second one the list of requirements. \\
-%List of requirements : 
-%Sustainability, Non-intrusiveness , Intuitiveness. Acceptability, Usability
+The study reports that, while the percentage of participants using the goal setting component (``Manage your consumption'') is only 62\%, this group of participants achieved over half of the savings. Their monthly reduction was about 7\%.
+
+\section{Results}
+The previous parts and the guidelines that some eco-feedbacks systems researches have established allow us to extract some requirements that the UI of eco-feedback should meet in order help the developers implementing software as effective as possible for the users. In the first subsection "famous" guidelines will be presented and in the second one the list of requirements. \\
 
 DIRECT COMPARISON: TABLE WITH ++ AND -~-~~(summary)
+
+\begin{table}
+  \caption{Overview of the results}
+  \label{table:results}
+  \scriptsize
+  \begin{center}
+    \begin{tabular}{|l|c|}
+       \hline
+       \textbf{UI component} & \textbf{Rating} \\
+       \hline
+       Consumption over time & \\
+       Historical comparison & \\
+       Normative comparison & \\
+       Incentives & \\
+       Disaggregation & \\
+       Goal setting & \\
+       \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\subsection{Consumption over time}
+The `consumption over time' component is one of the most basic UI components for eco-feedback systems. From the study by S. Karjalainen, we can conclude that it is mostly effective when the consumption is displayed in terms of costs instead of, for example, kWh.
+
+The study by Erickson et al. also showed that this component is the most popular and respondents to their survey indicated that this component contributed the most to understanding their energy usage.
+\subsection{Historical comparison}
+The `historical comparison' component was also very popular. However, as the survey results from Erickson et al. indicate, the component is a lot less insightful to users than the `consumption over time'. 
+
+The components also helps with increased retention, as the study by R. Jain et al. shows that this component leads to more logins of users.
+\subsection{Normative comparison}
+The interest from participants in the study by Karjalainen for the `normative comparison' component was not very high. 
+Additionally, the study from Erickson et al. found that the interest from users for this component was also not very high. Users indicated that the component did not provide much helpful information to them to aid them in reducing their electricity consumption.
+
+However, the study from Peschiera et al. has found that the use of normative comparison does aid in saving more energy. This seems to be contradicting with results from the other studies and more research would be required to know more about the effectiveness of this UI component.
+\subsection{Incentives}
+\subsection{Disaggregation}
+\subsection{Goal setting}
+
+
+%List of requirements : 
+%Sustainability, Non-intrusiveness , Intuitiveness. Acceptability, Usability
 
 \section{Discussion}
 Blabla about the interview.\\
 Blabla about the colors and permissions.\\
-And more blabla about how difficult it is to compare.
+Other factors for choosing what information to display in an eco-feedback system can also play a role. For example, some building managers will not allow visitors of the building to see how much money is spent on the electricity used.
+And more blabla about how difficult it is to compare. \\
+blended normative / incentives
 
 \section{Conclusion}
 In this paper, we looked at different user interface components used in eco-feedback systems. Based on several studies, we conclude that problems with understanding these interfaces for consumers are often caused by unfamiliarity with the scientific units used or how CO$_2$ relates to electricity usage. \\
