@@ -81,15 +81,16 @@ Research has shown that the type of information displayed and the techniques use
 In this paper we compare and discuss the various methods of visualizing energy usage for consumers. Some of the design components of user interfaces such as historical comparisons and presentation of costs are more likely to aid in providing the consumer with an understanding of his energy usage and changing his behavior.
 We will extract the most effective methods from research and surveys. \\
 
-The comparison of the different methods is based on the reduction of energy usage of consumers using such eco-feedback systems and if consumers keep using the eco-feedback systems for longer periods of time.
+The comparison of the different methods is based on the reduction of energy usage of consumers using such eco-feedback systems and if consumers keep using the eco-feedback systems for longer periods of time.\\
 
-Little work has been done in the design of eco-feedback systems. We expect to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
-% AURELIE COMMENT ADD THE RESULTS - We can conclude that design components such as historical comparison,presentations of costs are the most effective ones, they increase the users awareness.
-} % end of abstract
+Little work has been done in the design of eco-feedback systems. However, the researchers in the domain ( Human Computer Interface designers and environmental psychologists) agree that components such as historical comparison, presentation of costs and disaggregation by appliance are the most effective ones, even though there are no universal rules.
+ %We expect to find the most effective methods to visualize energy consumption data for future eco-feedback systems.
+
+} 
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
 %% please capitalize first letter and insert punctuation after last keyword
-\keywords{Eco-Feedback, interface design, energy consumption, consumption feedback systems, energy feedback}
+\keywords{Eco-Feedback, interface design, energy consumption, consumption feedback systems, energy feedback. Human Computer Interfaces}
 
 %% ACM Computing Classification System (CCS). 
 %% See <http://www.acm.org/class/1998/> for details.
@@ -141,10 +142,13 @@ The main UI components of eco-feedback systems are: historical comparison, prese
 Based on previous surveys we are going to compare the effectiveness of different eco-feedback systems by comparing the reduction in electricity usage. Additionally, we will combine the results/responses of surveys and interviews with users of such eco-feedback systems, to assess the effectiveness of different UI components. 
 
 % AURELIE COMMENT , rephrase:
-We aim at answering many questions in our paper, many decisions have to be made when designing such systems : \\
-\textbf{what type of data} should be displayed ? \\
-\textbf{how} should the data be displayed to users ? \\
-\textbf{which time scale} should be chosen to display those data ? 
+We aim at answering many questions in our paper, many decisions have to be made when designing such systems:
+\begin{itemize}
+\item \textbf{what type of data} should be displayed ? 
+\item \textbf{how and how much} should the data be displayed to users ? 
+\item \textbf{which time scale} should be chosen to display those data ? 
+\end{itemize}
+
 
 % methode
 For this comparative paper, we made a selection out of the previous work. 
@@ -201,7 +205,7 @@ The incentive design component is strongly related to the rewards \& penalizatio
 Previous research \cite{petersen2007dormitory} has shown that incentives can result in significant reductions of the electricity consumption.
 
 \subsubsection{Disaggregation or appliance specific breakdown}
-\textit{Disaggregation} or appliance-specific breakdown allows consumers to have a better understanding about which appliance consumes what, so it is easier for them to change a particular behavior. It helps consumers to understand the impact of a specific behavior or the use of an appliance to answers questions like ``if I let the TV on for 5 hours, how much do I consume?".
+\textit{Disaggregation} or appliance-specific breakdown allows consumers to have a better understanding about which appliance consumes what, so it is easier for them to change a particular behavior. It helps consumers to understand the impact of the use of an appliance to answer questions like ``if I let the TV on for 5 hours, how much do I consume?".
 %However this design component is C'est toujours à l'étape de recherche because installing and maintaining individual sensors is difficult.
 
 \subsubsection{Goal setting}
@@ -212,14 +216,29 @@ An example of a goal could be: ``reduce your energy consumption with 5\% compare
 
 Every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals.
 Eco-feedback systems can aid users to reach their goal thanks to tips and advices.
-To create an energy saving positive dynamic the eco-feedback system should reward their users when they reach their goal. 
+To motivate the users the eco-feedback system should reward them when they reach their goal. 
 
 
 
-\section{Presentation of the information inside the components : graphical, numerical and textual presentation} % Neeeed a better title
-In this section the following questions will be answered : What is the best and most effective way to present the information inside the key design components identified in the previous part ? What do the users understand easily texts or graphs ?
+\subsection{Presentation of the information inside the components} % Neeeed a better title
+% Description
+
+In this section different ways to present information will be described.
+% the ''how'' question is answered there
+%What is the best and most effective way to present the information inside the key design components identified in the previous part? What do the users understand easily texts or graphs?
+
+Developers have several options to present the same information: text, graphs, pie and bar charts, tables etc.
+
+\subsection{Numerical data : choice of units}
+The data provided to the users has to be understandable and familiar. The designers can present the energy consumption with scientific units such as : kWh (usually used in the bill), kgCO2,.., using a monetary unit, like euros or environmental units such as tree saved.
+To make it attractive for users, some designers do not lack in originality in their choice of units for displayed the amount of consumed energy. For example, an exposition in the Bernoulliborg by ScienceLinX shows an ECF that displays the consumption in the units ‘hamburgers or coffees bought’.
 %Kind of presentation that the users prefere graphical vs Text => guidelines of Smith and Mosier
 %More information about the chart pie, bar chart, tabular presentation understanding among users.
+
+%\subsection{Colors}
+Moreover, the choice of colors is also really important. There should not be too many colors so that the UI stays pleasant for the eye and the designers should not use the same colors to display different kinds of information.
+
+From the surveys and studies the most powerful will arise.
 
 \section{The Surveys}
 Several studies researching the effectiveness of consumer feedback on electricity consumption have been done before.
@@ -235,6 +254,7 @@ The studies can be divided into two components: a user wishes component and a co
 \subsection{User wishes surveys}
 Several past studies have done a user wishes survey, exploring the opinions of users (generally household consumers) by asking them a set of questions. \\
 
+\subsubsection{Survey by Karjalainen}
 In a study from S. Karjalainen\cite{karjalainen2011consumer} from 2010, interviewing was used to find the best ways to present information for maximum energy reductions. In this study, interviews with consumers were held to find out about their attitude towards energy monitoring and what kind of feedback they understand and prefer.
 
 The qualitative interviews showed that 8 out of 14 interviewees actively try to save electricity at home, while all 14 responded they want to monitor electricity consumption. The interviewees also indicated that they prefer to receive feedback via a bill, web page or dedicated wall display rather than a mobile phone.
@@ -260,15 +280,28 @@ Participants were also asked some general questions about how important they fin
     \end{tabular}
   \end{center}
 \end{table}
-
 % OUR OWN SURVEY
-$<<$INSERT OUR OWN SURVEY STUFF HERE]]$>>$ \\
+
+\subsubsection{Own Survey}
+In order to have more insight/more information about what young potential users want we conducted a survey that we posted on social networks: Facebook and Twitter.
+The 31 respondents were aged from 16 to 26.%\footnote{The results are available online at \url{}}
+
+First, we learnt that most of the participants (54,5\%) want to save energy but do not know how to accomplish this and that they are unaware of the existence of eco-feedback systems (64.5\%).
+ 
+Not surprisingly, at the 2.0 era, young people want an app (80\%) which could either be a classical ECF system (45.2\%) or a game (54.8\%).
+They prefer graphs such as pie charts and bar charts (87.9\%) rather than text or table. 
+Moreover, compared to historical comparison and presentation of costs, disaggregation by appliance (52.2\%) is favoured by the participants.
+When asked if they would be more motivated to save energy if they knew how much energy their peers use, about half of them replied that they did not mind and half of them said it would motivate them.
+The respondents indicated that money is the most understandable unit for them.
+
+In the next part we will see if the other studies and their outcomes are consistent with the results of this one.
 
 
 
 \subsection{Comparison/comparative surveys} %better title to be found
 Studies in the past have also collected data about energy consumer behavior in response to several different eco-feedback systems. These eco-feedback systems have different UI components and can therefore be used for a comparative analysis.\\
 
+\subsubsection{Karjalainen}
 In the study from S. Karjalainen\cite{karjalainen2011consumer}, 8 paper user interface prototypes were developed. Table~\ref{prototypes} shows an overview of the UI components present in these prototypes.
 
 \begin{table}
@@ -335,8 +368,7 @@ In contrast, information presented in charts and tables is understood easily by 
 
 The results of this study by Karjalainen found the following UI components most valued by consumers: presentation of costs, device-specific breakdown of energy usage and historical comparison.  % TODO: why?
 
-~\\
-
+\subsubsection{Peschiera et al.}
 Research from 2010 by Peschiera et al.\cite{peschiera2010response} provides more insight into the effectiveness of the normative comparison component. In their study, they tried to find out if there are differences in energy savings when participants only view personal electricity usage information versus participants also viewing average building occupant usage and usage of peers in their personal network.
 
 %FIXME: the following part is too 'narrative' and 'detailed'
@@ -357,8 +389,8 @@ After sending the second consumption notification email, the average electricity
 Group B only saw a significant reduction after the second notification email and Group A did not have a significant improvement.
 
 These results show the added value of using electricity consumption data from peer networks (normalized comparison) in reducing consumers energy consumption. Building occupants that were shown data of their peers or the average usage saved more energy than users that did not receive this information.
-~\\
 
+\subsubsection{R.K. Jain et al.}
 In another study, from R.K. Jain et al.\cite{jain2012assessing}, a prototype eco-feedback system was built, with five key UI design components:
 \begin{itemize}
 \item \textit{Historical comparison} - ability to view historical electricity consumption in three modes (24h, to date and last week)
@@ -374,14 +406,14 @@ Participants were divided into three groups: one group had access to room-level 
 The second group only had access to the room-level electricity usage data.
 The third group was a control group without access to the eco-feedback system.
 
-The researchers formulated and tested three hypothesis, namely:
+The researchers formulated and tested three hypotheses, namely:
 \begin{enumerate}
 \item Users who reduced their energy usage relative to the control group, will have visited the eco-feedback system more often than users who increased or maintained their energy usage.
 \item Users that use: historical comparison, normative comparison, incentives/rewards or disaggregation will login more than users that do not use this feature.
 \item The sign of the number of reward points a users views on their first login correlates with the number of times a user will log into the eco-feedback system.
 \end{enumerate}
 
-In Table~\ref{hypo1}, the results of performing an analysis of the login data can be seen. The data in this table confirms the hypothesis that users who decreased consumption logged in more often (almost twice as often) than users with an increased consumption. \\
+In Table~\ref{hypo1}, the results of performing an analysis of the login data can be seen. The data in this table confirms the hypothesis that users who decreased consumption logged in more often (almost twice as often) than users with an increased consumption. 
 
 \begin{table}
 %% Table captions on top in journal version
@@ -402,7 +434,7 @@ In Table~\ref{hypo1}, the results of performing an analysis of the login data ca
 
 Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the historical comparison feature, on average logged in 3 more times than users that did not use that feature. Additionally, users that used the incentives feature logged in more than 3 additional times compared to users that did not use that feature.
 
-For the normative comparison and disaggregation features, there was no significant increase in the number of logins. \\
+For the normative comparison and disaggregation features, there was no significant increase in the number of logins. 
 
 \begin{table}
   \caption{Correlation between user logins and the use of specific design components}
@@ -442,10 +474,9 @@ In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users wh
 
 We can conclude based on this study that the use of normative comparison and incentives may lead to more energy savings and that emphasizing rewards over penalization may increase energy savings even more. 
 Incentives and historical comparison also increase the engagement of users of this eco-feedback system.\\
-TODO: HOW MUCH ENERGY WAS SAVED??
-\\~\\
+%TODO: HOW MUCH ENERGY WAS SAVED??
 
-
+\subsubsection{Erickson et al.}
 In another paper, Erickson et al.\cite{erickson2013dubuque} developed a city-scale eco-feedback system aimed at reducing electricity consumption. The system provided households with fine-grained feedback about the electricity usage and has incentives, comparisons and goal setting for encouragement to save energy. \\
 
 \begin{figure}[h]
@@ -571,8 +602,6 @@ They reason that this could be due to the fact that the disaggregation component
 \subsection{Goal setting}
 For the goal setting, we can conclude from the study by S. Karjalainen that people were not really interested in the goal setting component. However, this UI component does seem very valuable, because in the study by Erickson et al., the group of participants using this UI component achieved over half of the savings.
 
-%List of requirements : 
-%Sustainability, Non-intrusiveness , Intuitiveness. Acceptability, Usability
 
 \section{Discussion}
 In this comparative paper, the effects of the UI components in several studies are used. These studies have all taken place in different environments and during different times which makes it difficult to compare the obtained results.
@@ -580,15 +609,35 @@ In this comparative paper, the effects of the UI components in several studies a
 The results obtained from the studies about the normative comparison are contradicting. Some studies indicate that users are not interested in this component and that it is not helpful to them, whereas other the study by Peschiera et al. obtained results that suggest that the normative UI component leads to significantly more energy savings.
 
 %blended normative / incentives
-Also, the study from Erickson et al. combines the UI component for incentives with a normative comparison. They rewards energy saving behavior with points (which is a reward), but also user the numbers of points the user collects in a ranking, which compares all the users.
+Also, the study from Erickson et al. combines the UI component for incentives with a normative comparison. They rewards energy saving behavior with points (which is a reward), but also user the numbers of points the user collects in a ranking, which compares all the users.\\
 
 %TODO: Blabla about the interview.\\
+During an interview we conducted with an expert of the field, he shared his experience and gave us more information about the design of ECF systems.
+As we saw in the previous parts, some design components are more likely to help the users in understanding their electricity usage. However, depending on the demand and the location where the UI will be displayed there are some differences, as the researcher said: ``You do not display the same thing in an art faculty and in a science faculty''.
+
+ Some factors influence the design of such systems: the environment, background, education of the users and purpose: saving money or taking care of the environment.
+For example, some building managers will not allow visitors of the building to see how much money is spent on the electricity used. So, the designers have to take the client requirements into account.
+In summary, there are no universal rules when it comes to the design of ECF systems.
 % Do we say something about colors??
-Other factors for choosing what information to display in an eco-feedback system can also play a role. For example, some building managers will not allow visitors of the building to see how much money is spent on the electricity used.
 
 
-%\section{Recommendations for UI designer}
-% do we do this??
+
+\section{Recommendations for UI designer}
+
+
+\subsection {List of requirements}
+
+The results from the surveys and the interview allow us to establish a list of requirements that must/should be fulfilled by the designers in order to build ECF systems as effective as possible:
+
+%TODO: add the source karjalainen
+
+Sustainability and long term-commitment
+Non-intrusiveness and Acceptability
+Learnability and Intuitiveness
+Usability
+Actionable
+
+% guidelines of the guy
 
 \section{Conclusion}
 In this paper, we looked at different user interface components used in eco-feedback systems. Based on several studies, we conclude that problems with understanding these interfaces for consumers are often caused by unfamiliarity with the scientific units used or how CO$_2$ relates to electricity usage. \\
@@ -610,7 +659,8 @@ The comparison for the `normative comparison'  UI component is inconclusive and 
 % we recoommend to promote/highlight these components and aid user with configuration to get significant benefit for energy saving
 
 \section{Future work}
-
+% normative comparison
+% we are not sure yet about what is the 'best' display, it depends on the users and the place
 
 %% if specified like this the section will be ommitted in review mode
 \acknowledgements{
