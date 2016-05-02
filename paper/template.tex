@@ -126,7 +126,8 @@ Little work has been done in the design of eco-feedback systems. However, the re
 %% \section{Introduction} %for journal use above \firstsection{..} instead
 
 % problem of energy usage
-Reducing energy usage in buildings and homes still remains a major challenge. It would lead to a better environment with less pollution and waste of energy. The consumers could also save money if they adopted a more sustainable and energy efficient behavior. % we can develop
+Reducing energy usage in buildings and homes still remains a major challenge. It would lead to a better environment with less pollution and waste of energy. The consumers could also save money if they adopted a more sustainable and energy efficient behavior. % But to achieve those goals users need some help 
+%However, according to studies users do not always know how to proceed, this is when ECF can play a role / come into play.
 One method to reduce energy consumption is by increasing the awareness of consumers about their energy consumption using eco-feedback systems. These are systems with integrated sensors that provide the consumers in the building with information about their energy usage. The goal is that this leads to more energy efficient behavior by the consumers in the building. 
 
 However, research has shown that the types of information displayed and the techniques used to present it have an impact on the user behavior.
@@ -166,7 +167,7 @@ In the first part of this paper the design components will be presented. In the 
 %It has been shown in many studies that feedback systems have effect in reducing energy consumption
 % design of user interface is a key factor to have impact on energy behavior
 \section{Eco-Feedback System Design}
-Developers have been implementing two different types of applications: classical eco-feedback systems and serious games (i.e. games which the purpose is not just entertainment)
+Developers have been implementing two different types of applications which can be classical eco-feedback systems and serious games (i.e. games which the purpose is not just entertainment)
 to make it even more attractive to the users and increase their commitment.
 
 Important aspects of eco-feedback systems are the kind of information displayed and the method of display. However, the aesthetics are also relevant for the engagement, pleasure and interest of the user \cite{bartram2015design}.
@@ -192,7 +193,7 @@ Two types of comparison are often presented in eco-feedback systems: historical 
 The historical comparison can often be displayed on a daily, weekly, monthly or yearly basis. It is used in the majority of eco-feedback systems\cite{spagnolli2011eco}, because it can be easily understood by the users, especially thanks to the use of bar charts. %(cf part BLABLABLA).
 Observing those graphs helps reminding users of their behavior (why they used more energy this particular day for example) and in consequence aids in changing their bad habits.
 
-Most eco-feedback systems do not take into account factors such as weather (more energy is used when it is colder) or households leaving for vacation when establishing the historical comparison \cite{karjalainen2011consumer}. This means that absolute values are analyzed whereas they should have been normalized first. Some improvements in the eco-feedback systems take those fluctuations and changes into account for more accuracy and consistency. \\
+However most eco-feedback systems do not take into account factors such as weather (more energy is used when it is colder) or households leaving for vacation when establishing the historical comparison \cite{karjalainen2011consumer}. This means that absolute values are analyzed whereas they should have been normalized first. Some improvements in the eco-feedback systems take those fluctuations and changes into account for more accuracy and consistency. \\
 
 %The historical comparison deals with comparison with the household's own prior consumption 
 Another type of comparison is the \textit{normative comparison}, which deals with comparison at a local, regional level or in a neighborhood. The effectiveness of the normative comparison comes from the fact that users are influenced by social norms and pressure. Seeing, for example, that their neighbors consume less energy than they do, should encourage them to do the same. It has been seen in previous research that such normative comparisons can lead to significant reductions in electricity usage \cite{peschiera2010response,siero1996changing,iyer2006comparison}.
@@ -207,28 +208,25 @@ Previous research \cite{petersen2007dormitory} has shown that incentives can res
 
 \subsubsection{Disaggregation or appliance specific breakdown}
 \textit{Disaggregation} or appliance-specific breakdown allows consumers to have a better understanding about which appliance consumes what, so it is easier for them to change a particular behavior. It helps consumers to understand the impact of the use of an appliance to answer questions like: ``if I let the TV on for 5 hours, how much do I consume?".
-We'll see in the survey part with some examples of UI that this deisgn component is often presented with pie charts most of the time and also with bar charts.
+We will see in the survey part with some examples of UI that this design component is presented most of the time with pie charts and also with bar charts.
 %However this design component is C'est toujours à l'étape de recherche because installing and maintaining individual sensors is difficult.
 
 \subsubsection{Goal setting}
 Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior \cite{abrahamse2007effect}.
-Some eco-feedback systems provide \textit{goal setting} design components. The users can set the goal themselves or they are pre-configured by the software or set by the community of users of the eco-feedback system.  %AURELIE new :
+Some eco-feedback systems provide \textit{goal setting} design components and is more suitable for UI in homes. The users can set the goal themselves or they are pre-configured by the software or set by the community of users of the eco-feedback system. However, every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals. 
 One way to generate a goal setting is to compute a baseline of energy consumption based on past usage and then set the goal as some percentage reduction from the baseline. % the computation of this baseline won't be presented in here
 An example of a goal could be: ``reduce your energy consumption with 5\% compared to the previous month''.
 
-%Every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals.
 In order to motivate the users, the eco-feedback system should reward users that reach their goal and aid users to reach their goal by giving them concrete tips and advices.
-
-
 
 \subsection{Presentation of the information inside the components} % Neeeed a better title
 % Description
 
 %In this section different ways to present information will be described.
 % the ''how'' question is answered there
-What is the best and most effective way to present the information inside the key design components identified in the previous part? What do the users understand easily: texts or graphs?
+When designing an ECF system developers should ask themselves questions such as " what is the best and most effective way to present the information inside the design components identified in the previous part? What do the users understand easily: texts or graphs? "
 
-Developers have several options to present the same information: text, graphs, pie and bar charts, tables etc.
+Developers have several options to present the same information: text, graphs, pie and bar charts, tables etc. But each presentation will have more or less impact on the user.
 
 Moreover, the choice of colors is also really important. There should not be too many colors so that the UI stays pleasant for the eye and the designers should not use the same colors to display different kinds of information.
 
@@ -251,7 +249,7 @@ We selected a wide range of surveys :some of them are theorical, while others ar
 \subsection{User wishes surveys}
 Several past studies have done a user wishes survey, exploring the opinions of users (generally household consumers) by asking them a set of questions. 
 % Interviews
-User wishes surveys are really interesting because who else than the users know what is good for them ? It allows the researchers and developers to really understand what can affect and impact the user behavior.
+User wishes surveys are really interesting because who else than the users can tell which elements could help them ? It allows the researchers and developers to really understand what can affect and impact the user behavior.
 
 \subsubsection{Survey by Karjalainen}
 In a study from S. Karjalainen \cite{karjalainen2011consumer} from 2010, interviewing was used to find the best ways to present information for maximum energy reductions. In this study, interviews with consumers were held to find out about their attitude towards energy monitoring and what kind of feedback they understand and prefer.
@@ -614,9 +612,9 @@ The results obtained from the studies about the normative comparison are contrad
 Also, the study from Erickson et al. combines the UI component for incentives with a normative comparison. They reward energy saving behavior with points (which is a reward), but also use the numbers of points the user collects in a ranking, which compares all the users.\\
 
 %TODO: Blabla about the interview.\\
-% Why did we make this interview
-%We conducted this interview in order to have more ifnormation about somone who have experienced in the deisgn of ECF in different fields, different users, to have a broader insight/view
-% Although there is no perfect answer, it soesnt prevail over what we said before (bias etc) having the opinion of an expert gave us information that we didn't find in the litterature, it raised some issues that we didn't imagine before
+% Why did we make this interview ?
+%We conducted this interview in order to have more ifnormation about somone who have experienced in the design of ECF systems in different fields, different users, to have a broader insight/view
+% Although it doesnt prevail over what we said before (bias etc) having the opinion of an expert gave us information that we didn't find in the litterature, it raised some issues that we didn't imagine before
 % confirmer or invalidate what we read before, add information about his experience , sees if a agrees of disagrees with what was said before etc
 
 %During an interview we conducted with an expert of the field, he shared his experience and gave us more information about the design of ECF systems.
