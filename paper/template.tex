@@ -160,13 +160,13 @@ In the first part of this paper the design components will be presented. In the 
 %It has been shown in many studies that feedback systems have effect in reducing energy consumption
 % design of user interface is a key factor to have impact on energy behavior
 \section{Eco-Feedback System Design}
-Developers have been implementing different types of applications: classical eco-feedback systems or serious games (e.g. games which the purpose is not just entertainment) %( ex *** ) 
+Developers have been implementing two different types of applications: classical eco-feedback systems and serious games (i.e. games which the purpose is not just entertainment)
 to make it even more attractive to the users and increase their commitment.
 
 Important aspects of eco-feedback systems are the kind of information displayed and the method of display. However, the aesthetics are also relevant for the engagement, pleasure and interest of the user \cite{bartram2015design}.
 
-In most of the eco-feedback systems some design components are often encountered.
-In this part they will be defined and later we will discuss their effect on users changing behavior in order to elect the most effective ones. 
+In most of the eco-feedback systems, some design components are often encountered.
+In this part, they will be defined and later we will discuss their effect on users changing behavior in order to elect the most effective ones. 
 
 %\subsection{Displays}
 %Eco-feedback systems are available on smart meters, personal computers, mobile devices and house/wall displays. %TODO what is better?? 
@@ -177,13 +177,13 @@ The following sections describe the different UI components often used in the de
 \subsubsection{Consumption over time}
 The \textit{consumption over time} UI component is one of the most basic components. It simply displays the consumption of energy over time. Usually, several time scales can be selected, like the last few hours, days or weeks.
 Almost all eco-feedback systems have a component like this one \cite{spagnolli2011eco}. 
-An example can be seen at 4 in Figure~\ref{fig:electricityportal}.
+An example can be seen at band 4 in Figure~\ref{fig:electricityportal}.
 
 \subsubsection{Historical \& Normative comparison}
 Two types of comparison are often presented in eco-feedback systems: historical and normative.\\
 
 \textit{Historical comparison} is defined as the ability of users to view their current consumption compared to their past consumption. %SOURCE
-The historical comparison can often be displayed on a daily, weekly, monthly or yearly basis. It is used in the majority of eco-feedback systems, because it can be easily understood by the users, especially thanks to the use of bar charts. %(cf part BLABLABLA).
+The historical comparison can often be displayed on a daily, weekly, monthly or yearly basis. It is used in the majority of eco-feedback systems\cite{spagnolli2011eco}, because it can be easily understood by the users, especially thanks to the use of bar charts. %(cf part BLABLABLA).
 Observing those graphs helps reminding users of their behavior (why they used more energy this particular day for example) and in consequence aids in changing their bad habits.
 
 Most eco-feedback systems do not take into account factors such as weather (more energy is used when it is colder) or households leaving for vacation when establishing the historical comparison \cite{karjalainen2011consumer}. This means that absolute values are analyzed whereas they should have been normalized first. Some improvements in the eco-feedback systems take those fluctuations and changes into account for more accuracy and consistency. \\
@@ -196,7 +196,7 @@ Another type of comparison is the \textit{normative comparison}, which deals wit
 \subsubsection{Incentives}
 \textit{Incentives} (rewards and penalization) allow users to earn rewards if they reduce their energy consumption or on the contrary to be penalized if they waste energy. The idea is that a system of rewards and penalization encourages behavior that leads to energy conservation and discourages wasteful behavior.
 
-The incentive design component is strongly related to the rewards \& penalization design components. Users can be rewarded in a financial or non-financial way. Financial incentives can be, for example, credit on an electricity bill and non-financial incentives can be prizes such as an energy efficient lamp or reaching higher levels in the game.
+Users can be rewarded in a financial or non-financial way. Financial incentives can be, for example, credit on an electricity bill and non-financial incentives can be prizes such as an energy efficient lamp or reaching higher levels in a game.
 Previous research \cite{petersen2007dormitory} has shown that incentives can result in significant reductions of the electricity consumption.
 
 \subsubsection{Disaggregation or appliance specific breakdown}
@@ -206,13 +206,12 @@ We'll see in the survey part with some examples of UI that this deisgn component
 
 \subsubsection{Goal setting}
 Environmental psychology departments have demonstrated that users need to find motivation in order to change their behavior \cite{abrahamse2007effect}.
-Some eco-feedback systems provide \textit{goal setting} design components: the users can set the goal themselves or they are pre-configured by the software or set by the community of users of the eco-feedback system.  %AURELIE new :
+Some eco-feedback systems provide \textit{goal setting} design components. The users can set the goal themselves or they are pre-configured by the software or set by the community of users of the eco-feedback system.  %AURELIE new :
 One way to generate a goal setting is to compute a baseline of energy consumption based on past usage and then set the goal as some percentage reduction from the baseline. % the computation of this baseline won't be presented in here
 An example of a goal could be: ``reduce your energy consumption with 5\% compared to the previous month''.
 
-Every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals.
-Eco-feedback systems can aid users to reach their goal thanks to tips and advices.
-To motivate the users, the eco-feedback system should reward them when they reach their goal. 
+%Every household consumes in a different way. Therefore, households in the same neighborhood are not likely to have the same goals.
+In order to motivate the users, the eco-feedback system should reward users that reach their goal and aid users to reach their goal by giving them concrete tips and advices.
 
 
 
@@ -295,7 +294,7 @@ In the next part we will see if the other studies and their outcomes are consist
 
 
 
-\subsection{Comparison/comparative surveys} %better title to be found
+\subsection{Presentation of surveys/studies} %better title to be found
 Studies in the past have also collected data about energy consumer behavior in response to several different eco-feedback systems. These eco-feedback systems have different UI components and can therefore be used for a comparative analysis.
 
 \subsubsection{Karjalainen}
@@ -398,7 +397,7 @@ In another study, from R.K. Jain et al. \cite{jain2012assessing}, a prototype ec
 
 The prototype was designed to allow users to go to any of the key design components with a single click from the main view. The system gathered and stored data on logins and use of the system in a database for later analysis.\\
 
-Participants were divided into three groups: one group had access to room-level electricity usage data and consumption information for participants in their peer network added to the historical comparison graphs. 
+Participants were divided into three groups: one group had access to room-level electricity usage data and consumption information of participants in their peer network added to the historical comparison graphs. 
 The second group only had access to the room-level electricity usage data.
 The third group was a control group without access to the eco-feedback system.
 
@@ -406,29 +405,29 @@ The researchers formulated and tested three hypotheses, namely:
 \begin{enumerate}
 \item Users who reduced their energy usage relative to the control group, will have visited the eco-feedback system more often than users who increased or maintained their energy usage.
 \item Users that use: historical comparison, normative comparison, incentives/rewards or disaggregation will login more than users that do not use this feature.
-\item The sign of the number of reward points a users views on their first login correlates with the number of times a user will log into the eco-feedback system.
+\item The sign of the number of reward points a user views on their first login correlates with the number of times a user will log into the eco-feedback system.
 \end{enumerate}
 
-In Table~\ref{hypo1}, the results of performing an analysis of the login data can be seen. The data in this table confirms the hypothesis that users who decreased consumption logged in more often (almost twice as often) than users with an increased consumption. 
+The data collected by the researchers confirmed the hypothesis that users who decreased consumption logged in more often (almost twice as often) than users with an increased consumption. 
 
-\begin{table}[h]
-%% Table captions on top in journal version
-  \caption{The results for the first hypothesis \cite{jain2012assessing}}
-  \label{hypo1}
-  \scriptsize
-  \begin{center}
-    \begin{tabular}{cccc}
-    \multicolumn{1}{p{1cm}}{\centering } &
-       \multicolumn{1}{p{2.5cm}}{\centering Users who reduced consumption} &
-       \multicolumn{1}{p{2.5cm}}{\centering Users who increased consumption} \\
-    \hline
-      Mean user logins &  5.13 & 2.60\\
+% \begin{table}[h]
+% %% Table captions on top in journal version
+%   \caption{The results for the first hypothesis \cite{jain2012assessing}}
+%   \label{hypo1}
+%   \scriptsize
+%   \begin{center}
+%     \begin{tabular}{cccc}
+%     \multicolumn{1}{p{1cm}}{\centering } &
+%        \multicolumn{1}{p{2.5cm}}{\centering Users who reduced consumption} &
+%        \multicolumn{1}{p{2.5cm}}{\centering Users who increased consumption} \\
+%     \hline
+%       Mean user logins &  5.13 & 2.60\\
+% 
+%     \end{tabular}
+%   \end{center}
+% \end{table}
 
-    \end{tabular}
-  \end{center}
-\end{table}
-
-Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the historical comparison feature, on average logged in 3 more times than users that did not use that feature. Additionally, users that used the incentives feature logged in more than 3 additional times compared to users that did not use that feature.
+Table~\ref{hypo2} shows the correlation between logins and use of specific design components. From these results, it can be concluded that users who used the historical comparison feature, on average logged in 3 more times than users that did not use that feature. Additionally, users that used the incentives feature, logged in more than 3 additional times compared to users that did not use that feature.
 
 For the normative comparison and disaggregation features, there was no significant increase in the number of logins. 
 
@@ -451,22 +450,22 @@ For the normative comparison and disaggregation features, there was no significa
   \end{center}
 \end{table}
 
-In Table~\ref{hypo3}, the results for the third hypothesis can be seen. Users who viewed a positive number of points on their first login, logged in 2.5 more times than users that got to see a negative number of points on their first login. \\
+With respect to the third hypothesis, they found that users who viewed a positive number of points on their first login, logged in 2.5 more times than users that got to see a negative number of points on their first login. \\
 
-\begin{table}
-  \caption{Correlation between the sign of the number of points on first visit and number of logins \cite{jain2012assessing}}
-  \label{hypo3}
-  \scriptsize
-  \begin{center}
-    \begin{tabular}{lcc}
-    \multicolumn{1}{p{2cm}}{\centering } &
-       \multicolumn{1}{p{2cm}}{\centering Users that viewed positive points} &
-       \multicolumn{1}{p{2cm}}{\centering Users that viewed negative points} \\
-    \hline
-      Mean user logins &  4.79 & 2.10\\
-    \end{tabular}
-  \end{center}
-\end{table}
+% \begin{table}
+%   \caption{Correlation between the sign of the number of points on first visit and number of logins \cite{jain2012assessing}}
+%   \label{hypo3}
+%   \scriptsize
+%   \begin{center}
+%     \begin{tabular}{lcc}
+%     \multicolumn{1}{p{2cm}}{\centering } &
+%        \multicolumn{1}{p{2cm}}{\centering Users that viewed positive points} &
+%        \multicolumn{1}{p{2cm}}{\centering Users that viewed negative points} \\
+%     \hline
+%       Mean user logins &  4.79 & 2.10\\
+%     \end{tabular}
+%   \end{center}
+% \end{table}
 
 We can conclude based on this study that the use of normative comparison and incentives may lead to more energy savings and that emphasizing rewards over penalization may increase energy savings even more. 
 Incentives and historical comparison also increase the engagement of users of this eco-feedback system.\\
@@ -606,7 +605,7 @@ In this comparative paper, the effects of the UI components in several studies a
 The results obtained from the studies about the normative comparison are contradicting. Some studies indicate that users are not interested in this component and that it is not helpful to them, whereas other the study by Peschiera et al. obtained results that suggest that the normative UI component leads to significantly more energy savings.
 
 %blended normative / incentives
-Also, the study from Erickson et al. combines the UI component for incentives with a normative comparison. They reward energy saving behavior with points (which is a reward), but also user the numbers of points the user collects in a ranking, which compares all the users.\\
+Also, the study from Erickson et al. combines the UI component for incentives with a normative comparison. They reward energy saving behavior with points (which is a reward), but also use the numbers of points the user collects in a ranking, which compares all the users.\\
 
 %TODO: Blabla about the interview.\\
 % Why did we make this interview
@@ -650,7 +649,7 @@ From the researched studies, we can conclude that the `consumption over time' an
 
 The `goal setting' component leads to a very significant increase in energy usage. However, the interest from users is generally low. When this component is used, it is therefore important to promote the use of it by users of the eco-feedback system.
 
-Disaggregation is valued highly by users of eco-feedback systems. It provides a lot of insightful and actionable information. However, a larger time to configure this component correctly, means that it is sometimes not used by consumers. This should be kept in mind when using this component in an eco-feedback system.
+Disaggregation is valued highly by users of eco-feedback systems. It provides much insightful and actionable information. However, a larger time to configure this component correctly, means that it is sometimes not used by consumers. This should be kept in mind when using this component in an eco-feedback system.
 
 The use of incentives to motivate consumers to save electricity is also effective in making consumers use the eco-feedback system, especially when users of the system start with a positive number of points.
 
